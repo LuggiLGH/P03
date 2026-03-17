@@ -125,7 +125,18 @@ figure img {
   transition-duration: 0.5s;
 }
 
-.button-nav {
+.stickyHeader {
+    display: flex;
+    justify-content: center;
+
+    width: 100vw;
+    position: sticky;
+    top: 0;
+
+    z-index: 999;
+}
+
+.button {
   display: inline-block;
   padding: 0.5rem;
   color: #FFFF;
@@ -134,14 +145,14 @@ figure img {
   transition-property: background-color; 
   transition-duration: 0.5s;
 }
-.button-nav:hover, .button-nav:focus {
+.button:hover, .button:focus {
   color: #0b083b;
   background-color: #f27c4e;
   transition-property: background-color;
   transition-duration: 0s;
 }
 
-.button-nav:active {
+.button:active {
   color: #fff;
   background-color: #ffe675;
 }
