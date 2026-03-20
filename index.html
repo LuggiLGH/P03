@@ -12,50 +12,90 @@
       <div class = 'headerImg'>
         <h1>P03 - Portfolio</h1>    
       </div>
-
-      <nav class = 'headerNav stickyHeader'>    
-        <a href = '#home'>Home</a>     
-        <a href = "#games">Games</a>
-        <a href = "#arts">Art</a>
-        <a href = "#music">Music</a>
-        <a href = "#citations">Citations</a>
-      </nav>
   </header>
 
-    <section id = 'home'>
+  <nav class = 'headerNav stickyHeader'>    
+    <a href = '#home'>Home</a>     
+    <a href = "#games">Games</a>
+    <a href = "#arts">Art</a>
+    <a href = "#music">Music</a>
+  </nav>
+
+    <section id = 'home' class = 'homeSection'>
         <h1>Heya. Welcome to my Portfolio.</h1>
-        <p>My name is Joshua Ma, I'm a game designer with an interest in creating fun games full of characters that find a way into your heart.</p>
+        <h2>My name is Joshua Ma, I'm a game designer with an interest in creating fun games full of characters that find a way into your heart.</h2>
 
         <!-- Image here, animated drawing, interactable shelfs with various items (art, music, games) -->
         <div class = 'homeImg'>
-            <a href = ''>
+            <a href = '#games'>
               <img src = 'assets/img/shelf1.png' alt = ''/> <!-- shelf1 -->
             </a>
 
-            <a href = ''>
+            <a href = '#art'>
               <img src = 'assets/img/main.png' alt = ''/> <!-- main image, in the center -->
             </a>
 
-            <a href = ''>
+            <a href = '#music'>
               <img src = 'assets/img/shelf2.png' alt = ''/> <!-- shelf2 -->
             </a>
         </div>
     </section>
 
-    <section id = 'games'> <!-- basically boxes next to each other -->
+    <section id = 'game'> <!-- basically boxes next to each other -->
       <h2>Projects</h2>
+
+      <div class = 'gameSection'>
+        <article class = 'gameCover'>
+          <a href = ''>
+            <img src = 'assets/img/homeMima.png'class = 'zoomImg' alt = 'A game cover image for Mimas Adventure, a 2D sidescroller made for an SFU course.'/>
+          </a>
+          <h3>Mima's Adventure</h3>
+          <h4>Game Designer - 2021</h4>
+          <p>A 2D side-scroller, you play as a riceball named Mima to get back your fries!</p>
+        </article>
+
+        <article class = 'gameCover'>
+          <a href = 'h&h.html'>
+            <img src = 'assets/img/homeHandH.png' class = 'zoomImg' alt = 'A game cover image for Hit & Haunted, a top-down investigation game. Created for a senior-level SFU course.'/>
+          </a>
+          <h3>Hit & Haunted</h3>
+          <h4>Game Designer - 2022</h4>
+          <p>A top-down murder mystery game where you play as the murderer, a hitman!</p>
+        </article>
+      </div>
     </section>
 
     <section id = 'art'> <!-- gallery -->
       <h2>Character Designs</h2>
         <article class = 'character'> <!-- mix of modal image and caption-->
-
+          <h3>Hones</h3>
+          <img src = 'assets/img/hones ref.png' class = 'modalImg zoomImg' alt = 'A reference sheet for Hones, a skeleton caster/assassin.'/>
+          <div>
+            <h4>Type of Work</h4>
+            <p>Personal</p>
+          </div>
         </article>
     </section>
 
       <section id = 'music'> <!-- sample of work and link to spotify/soundcloud-->
         <h2>Samples</h2>
         
+        <article class = 'track'>
+          <h3>Happless Hero</h3>
+          <audio controls>
+            <source src = 'assets/audio/happlesshero.ogg' type = 'audio/ogg'/>
+            Your browser does not support the audio element.
+          </audio>
+          <div>
+            <div>
+            <h4>Type of Work</h4>
+            <p>Commission</p>
+            </div>
+            <div>
+              <a href = 'https://soundcloud.com/utashes/papyrus-hapless-hero'><h4>Listen on SoundCloud</h4></a>
+            </div>
+          </div>
+        </article>
     </section>
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
@@ -63,7 +103,20 @@
   </script>
 
   <footer>
+      <div class = 'navFooter'>
+          <div class = 'footerSection'>
+              <h4>Contact & About</h4>
+              <a href="./contactPage.html">Contact</a>
+              <a href="./about.html">About Me</a>
+          </div>
 
+          <div class = 'footerSection'>
+              <h4>Other Links</h4>
+              <a href = './StyleGuide.html'>Style Guide</a>
+              <a href = './StyleGuide.html#citation'>Citations</a>
+              <a href = 'https://github.com/RCC1783/IAT339-P02'>GitHub Repository</a>
+          </div>
+      </div>
   </footer>
 </body>
 </html>
