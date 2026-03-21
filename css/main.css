@@ -345,7 +345,7 @@ a:hover {
   width: 100%;
 
   transition-duration: 1s;
-  cursor: pointer;
+  cursor: pointer; /* cursor pulled from https://www.w3schools.com/cssref/tryit.php?filename=trycss_cursor */
 }
 
 .zoomImg:hover {
