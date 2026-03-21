@@ -10,42 +10,72 @@
 <body>
   <header>
       <div class = 'headerImg'>
-        <h1>P03 - Portfolio</h1>    
+        <a href = 'index.html'>
+          <img src = 'assets/img/logo.png' alt = "A logo for Joshua Ma's Portfolio."/>
+        </a>
       </div>
-
-      <nav class = 'headerNav stickyHeader'>    
-        <a href = 'index.html #home'>Home</a>     
-        <a href = "index.html #games">Games</a>
-        <a href = "index.html #arts">Art</a>
-        <a href = "index.html #music">Music</a>
-      </nav>
   </header>
 
-  <section class = 'about'>
+  <nav class = 'headerNav stickyHeader'>    
+      <a href = 'index.html'>Home</a>     
+  </nav>
+
+  <section class = 'aboutSection'>
     <h2>About Me</h2>
-    <p>Ever since I was a kid, I was always drawn to video games and stories (even if I got distracted in them for way too long!). I didn't realize it at the time, but it was always due to the characters. I would want to root for them as they found a way into my heart.
+    <p>
+      Ever since I was a kid, I was always drawn to video games and stories (even if I got distracted in them for way too long!). I didn't realize it at the time, but it was always due to the characters. I would want to root for them as they found a way into my heart.
       And now? I want to take that create that experience for others, I fell in love with the process of "growing" the character from a simple idea in my head to a fully fleshed-out character. I hope my work here demonstrates that well to you.
     </p>
 
-    <p>I'm currently studying in the Interactive Arts and Technology program at SFU, and the process of creating a game was what fit the most with me. As it lets me take advantage of my various skills in creating fun visuals, composing catchy music, and
-      writing stories with enjoyable characters and dynamics to create games that be fun and engaging</p>
+    <p>
+      I'm currently studying in the Interactive Arts and Technology program at SFU, and the process of creating a game was what fit the most with me. As it lets me take advantage of my various skills in creating fun visuals, composing catchy music, and
+      writing stories with enjoyable characters and dynamics to create games that be fun and engaging with solid visuals and catchy tunes.
+    </p>
   </section>
-  
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-  <script>
-  </script>
+
+  <section class = 'aboutSection' id = 'contact'>
+    <section class = 'contactSection'>
+      <h2>Contact Me</h2>
+        <form class = 'textForm'>
+            <label for = 'name'>Name:</label>
+            <input type = 'text' id = 'name' name = 'name' placeholder = 'Name'>
+
+            <label for = 'email'>Email:</label>
+            <input type = 'email' id = 'email' name = 'email' placeholder = 'Email'>
+
+            <label for = 'subject'>Subject:</label>
+            <input type = 'text' id = 'subject' name = 'subject' placeholder = 'Subject'>
+
+            <label for = 'message'>Message:</label>
+            <textarea id = 'message' name = 'message' placeholder = 'Your message here...'></textarea>
+
+            <button type = 'submit'>Send Message</button>
+        </form>
+
+    </section>
+
+  </section>
+    <div class = 'bgContainer'>
+      <div class = 'scrollBGLEFT'></div>
+      <div class = 'scrollBGRIGHT'></div>
+    </div>
+
+  <script src = 'js/script.js'></script>
 
   <footer>
       <div class = 'navFooter'>
           <div class = 'footerSection'>
-              <h4>Contact</h4>
-              <a href="./contactPage.html">Contact Us</a>
+              <h4>Contact & About</h4>
+              <a href="./about.html">About Me</a>
+              <a href="./about.html#contact">Contact</a>
           </div>
+
           <div class = 'footerSection'>
               <h4>Other Links</h4>
               <a href = './StyleGuide.html'>Style Guide</a>
               <a href = './StyleGuide.html#citation'>Citations</a>
-              <a href = 'https://github.com/RCC1783/IAT339-P02'>GitHub Repository</a>
+              <a href = 'https://github.com/LuggiLGH/P03'>GitHub Repository</a>
+              <a href = 'https://joshua-luggi.webflow.io/'>Original Portfolio</a>
           </div>
       </div>
   </footer>

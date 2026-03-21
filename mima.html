@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mima's Adventure</title>
+  <link href="css/main.css" rel="stylesheet" />
+</head>
+
+    <body>
+        <header>
+            <div class = 'headerImg'>
+                <a href = 'index.html'>
+                <img src = 'assets/img/logo.png' alt = "A logo for Joshua Ma's Portfolio."/>
+                </a>
+            </div>
+        </header>
+
+        <nav class = 'headerNav stickyHeader'>    
+            <a href = 'index.html'>Home</a>     
+            <a href = "#overview">Overview</a>
+            <a href = "#context">Context</a>
+            <a href = "#objective">Objective</a>
+            <a href = "#characters">Characters</a>
+            <a href = "#script">Script & Story</a>
+        </nav>
+
+        <section class = 'projectInfo'>
+            <h1>Mima's Adventure</h1>
+            <h2>ROLES</h2>
+                <h3>Game Developer, Game Designer</h3>
+        </section>
+
+        <section class = 'projectOverview'>
+            <section class = 'projectSection' id = 'overview'> <!-- Overview -->
+                <h3>Project Overview</h3>
+                <p>
+                    Mima's Adventure is a short 2D side-scroller. You play as Mima, a riceball who had their fries stolen!
+                </p>
+
+                <p>
+                    You can play the game here: <a href = 'https://drive.google.com/file/d/1-_vdiw3a2MrU-HT-g6xxXvjMiEygvlP5/view'>Mima's Adventure</a> (Make sure to have Processing and the ControlP5 Library installed!)
+                </p>
+            </section>
+
+
+            <section class = 'projectSection' id = 'context'>
+                <h3>Context</h3>
+                <p><b>Genre:</b> Action, Platformer</p>
+                <p><b>Team Size:</b> 1</p>
+                <p><b>Platform:</b> PC (Windows Only)</p>
+                <p><b>Development Time:</b> March - April 2021</p>
+                <p><b>Tools Used:</b> Processing (Game Engine), Aseprite (Artwork), FL Studio (Music, Sound Effects)</p>
+                <br>
+                <p>
+                    Mima's Adventure was the first game I ever made, it was a solo academic project I completed at SFU within four weeks. I created the game in Processing, the art in Clip Studio Paint and
+                    Aseprite, and the music and sound effects in FL Studio. 
+                </p>
+            </section>
+
+            <section class = 'projectSection'> <!-- Logo -->
+                <figure>
+                    <img src = 'assets/img/mima/mimaLogo.png' class = 'zoomImg' onclick = "openModal('modal3', 'A sketch and finalized version of the logo for the game, designed by me. Sketched in Clip Studio Paint and finalized in Aseprite.')" alt = "A sketch and finalized version of the logo for the Mima's Adventure, designed by me. Sketched in Clip Studio Paint and finalized in Aseprite.">
+                    <figcaption>Logo for Mima's Adventure, designed by me. Sketched in Clip Studio Paint and finalized in Aseprite.</figcaption>
+                </figure>
+                <div id = 'modal3' class = 'modal'>
+                    <span class="close" onclick = "closeModal('modal3')">&times;</span>
+                    <img class = "modalImg" id = 'hhKeyArt' src = 'assets/img/mima/mimaLogo.png' alt = "Logo for Mima's Adventure, designed by me. Sketched in Clip Studio Paint and finalized in Aseprite.">
+                    <div class="caption"></div>
+                </div>
+            </section>
+
+            <section class = 'projectSection' id = 'objective'>
+                <h3>Objective</h3>
+                <p>
+                    Mima's Adventure was meant to demonstrate what we've learned about Processing over during the course. With only four weeks to make the game, I thought that a 2D side-scroller with a simple plot
+                    would be the most feasible, as I could put allocate most of my time into working on the gameplay.
+                </p>
+
+                <p>
+                    The abilities I wanted players to have on-top of the standard run and jump, was a dash ability, a double jump, and the ability to interact with objects like signs or NPCs.
+                </p>
+            </section>
+
+            <section class = 'projectSection' id = 'development'>
+                <h3>Development</h3>
+                <p>
+                    After my initial proposal was approved, I set out to work on the game's foundations. This included the basic movement, enemy AI and things such as platforms. To ensure I didn't spend too much 
+                    on aesthetics, I went with placeholder sprites that were meant to be replaced at a later date. This would allow me to quickly test and ideate other possible mechanics, and scrap them or planned ones
+                    in case it doesn't work out, all while preventing my the heartbreak compared to if I had already made the art for it.
+                </p>
+
+                <p>
+                    A bug turned mechanic I implemented was the mechanic on where if you stepped on multiple enemies at the same time, it would actually send you flying. Looking back, I believe the reason why this
+                    happened was due to the enemy classes handling how much momentum Mima gains when they step on them, and so when stepping on multiple, that momentum gain would stack and send Mima flying.
+                    
+                    I honestly saw this as something fun to play with, and so I kept it and made a section in one of the four levels take advantage of this mechanic. Having multiple enemies in a section with a sign
+                    nearby to inform players about it.
+                </p>
+            </section>
+
+            <section class = 'projectSection'> <!-- Doc Image -->
+                <figure>
+                    <img src = 'assets/img/mima/mimaDoc.png' class = 'zoomImg' onclick = "openModal('modal4', `Sections from the propoal document for Mima's Adventure, it shows planned mechanics and the basic narrative.`)" alt = "Sections from the propoal document for Mima's Adventure, it shows planned mechanics and the basic narrative.">
+                    <figcaption>Sections from the propoal document for Mima's Adventure, it shows planned mechanics and the basic narrative.</figcaption>
+                </figure>
+                <div id = 'modal4' class = 'modal'>
+                    <span class="close" onclick = "closeModal('modal4')">&times;</span>
+                    <img class = "modalImg" id = 'hhKeyArt' src = 'assets/img/mima/mimaDoc.png' alt = "Sections from the propoal document for Mima's Adventure, it shows planned mechanics and the basic narrative.">
+                    <div class="caption"></div>
+                </div>
+            </section>
+
+            <section class = 'projectSection' id = 'issues'>
+                <h3>Issues & Solutions</h3>
+                <p>
+                    Given that it was my first time making game, I ended up taking up more time than I expected focusing coding, bug fixing before I could get to both the art and music. So I had to compromise, I made
+                    new art assets for the game, but I had to use older tracks that I composed or covered in my personal time for the soundtrack.
+                </p>
+            </section>
+
+            <section class = 'projectSection'> <!-- Art Image -->
+                <figure>
+                    <img src = 'assets/img/mima/mimab4after.png' class = 'zoomImg' onclick = "openModal('modal5', `Screenshots of Mima’s Adventure while in development (Left) and finished (Right). Sprites were created in Aesprite.`)" alt = "Screenshots of Mima’s Adventure while in development (Left) and finished (Right). Sprites were created in Aesprite.">
+                    <figcaption>Screenshots of Mima’s Adventure while in development (Left) and finished (Right). Sprites were created in Aesprite.</figcaption>
+                </figure>
+                <div id = 'modal5' class = 'modal'>
+                    <span class="close" onclick = "closeModal('modal5')">&times;</span>
+                    <img class = "modalImg" id = 'hhKeyArt' src = 'assets/img/mima/mimab4after.png' alt = "Screenshots of Mima’s Adventure while in development (Left) and finished (Right). Sprites were created in Aesprite.">
+                    <div class="caption"></div>
+                </div>
+
+                <figure>
+                    <img src = 'assets/img/mima/compare.gif' class = 'zoomImg' onclick = "openModal('modal6', `Placeholder sprites placed next to their finalized counterparts. All created in Aseprite by me.`)" alt = "Placeholder sprites placed next to their finalized counterparts. All created in Aseprite by me.">
+                    <figcaption>Placeholder sprites placed next to their finalized counterparts. All created in Aseprite by me.</figcaption>
+                </figure>
+                <div id = 'modal6' class = 'modal'>
+                    <span class="close" onclick = "closeModal('modal6')">&times;</span>
+                    <img class = "modalImg" id = 'hhKeyArt' src = 'assets/img/mima/compare.gif' alt = "Placeholder sprites placed next to their finalized counterparts. All created in Aseprite by me.">
+                    <div class="caption"></div>
+                </div>
+            </section>
+
+            <section class = 'projectSection' id = 'conclusion'>
+                <h3>Conclusion</h3>
+                <p>
+                    Despite the time constraint I found myself in, Mima's Adventure was a very rewarding experience, and set me on the path to become a game designer. It also showed me how important it was to
+                    prioritize and manage my time, with coding being the most important aspect of develpoment, and art and music being secondary.
+                    
+                    My efforts in this project resulted in the TA
+                    recommending me to send the project to my professor in case there was a SFU showcase that year.
+                </p>
+
+                <p>
+                    I am currently remaking this game and hope to release it sometime soon, with more levels, more music, and hopefully better aesthetics.
+                </p>
+            </section>
+        </section>
+
+        <div class = 'bgContainer'>
+            <div class = 'scrollBGLEFT'></div>
+            <div class = 'scrollBGRIGHT'></div>
+        </div>
+
+        <script src = 'js/script.js'></script>
+
+        <footer>
+            <div class = 'navFooter'>
+                <div class = 'footerSection'>
+                    <h4>Contact & About</h4>
+                    <a href="./about.html">About Me</a>
+                    <a href="./about.html#contact">Contact</a>
+                </div>
+
+                <div class = 'footerSection'>
+                    <h4>Other Links</h4>
+                    <a href = './StyleGuide.html'>Style Guide</a>
+                    <a href = './StyleGuide.html#citation'>Citations</a>
+                    <a href = 'https://github.com/LuggiLGH/P03'>GitHub Repository</a>
+                    <a href = 'https://joshua-luggi.webflow.io/'>Original Portfolio</a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

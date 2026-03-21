@@ -10,15 +10,22 @@
     <body>
         <header>
             <div class = 'headerImg'>
-                <h1>P03 - Portfolio</h1>    
+                <a href = 'index.html'>
+                <img src = 'assets/img/logo.png' alt = "A logo for Joshua Ma's Portfolio."/>
+                </a>
             </div>
         </header>
 
         <nav class = 'headerNav stickyHeader'>    
             <a href = 'index.html'>Home</a>     
-            <a href = "#games">Games</a>
-            <a href = "#arts">Art</a>
-            <a href = "#music">Music</a>
+            <a href = "#overview">Overview</a>
+            <a href = "#context">Context</a>
+            <a href = "#objective">Objective</a>
+            <a href = "#characters">Characters</a>
+            <a href = "#script">Script & Story</a>
+            <a href = "#audio">Music & Sound Design</a>
+            <a href = "#playtesting">Playtesting & Marketing</a>
+            <a href = "#conclusion">Conclusion</a>
         </nav>
 
         <section class = 'projectInfo'>
@@ -28,7 +35,7 @@
         </section>
 
         <section class = 'projectOverview'>
-            <section class = 'projectSection'>
+            <section class = 'projectSection' id = 'overview'> <!-- Overview -->
                 <h3>Project Overview</h3>
                 <p>
                     Hit & Haunted is a murder mystery game where you play as the killer: a hitman named Ace. Shortly after witnessing his kill you quickly encounter the other playable character: a ghost of the victim named Eli.
@@ -42,18 +49,23 @@
 
             <section class = 'projectSection'> <!-- Key Art Image -->
                 <figure>
-                    <img src = 'assets/img/hitandhaunted/store_capsule_main.png' class = 'modalImg zoomImg' alt = 'Hit & Haunted Store Capsule'>
+                    <img src = 'assets/img/hitandhaunted/store_capsule_main.png' class = 'zoomImg' onclick = "openModal('modal3', 'Key art for Hit & Haunted, featuring Ace, Eli and the logo for the game.')" alt = 'Key art for Hit & Haunted, featuring Ace, Eli and the logo for the game.'>
                     <figcaption>Key art for our game Hit & Haunted. Ace and Eli were drawn by Yuki and the image was arranged in Adobe Photoshop by me.</figcaption>
                 </figure>
+                <div id = 'modal3' class = 'modal'>
+                    <span class="close" onclick = "closeModal('modal3')">&times;</span>
+                    <img class = "modalImg" id = 'hhKeyArt' src = 'assets/img/hitandhaunted/store_capsule_main.png' alt = 'Key art for Hit & Haunted, featuring Ace, Eli and the logo for the game.'>
+                    <div class="caption"></div>
+                </div>
             </section>
 
-            <section class = 'projectSection'>
+            <section class = 'projectSection' id = 'context'>
                 <h3>Context</h3>
-                <p>Genre: Adventure</p>
-                <p>Team Size: 3</p>
-                <p>Platform: PC (Windows Only)</p>
-                <p>Development Time: January - April 2025</p>
-                <p>Tools Used: Clip Studio Paint (Art), Adobe Photoshop (Steam Assets), Final Draft (Script), Figma (Flowchart), FL Studio (Music, Sound), Audacity (Sound).</p>
+                <p><b>Genre:</b> Adventure</p>
+                <p><b>Team Size:</b> 3</p>
+                <p><b>Platform:</b> PC (Windows Only)</p>
+                <p><b>Development Time:</b> January - April 2025</p>
+                <p><b>Tools Used:</b> Clip Studio Paint (Art), Adobe Photoshop (Steam Assets), Final Draft (Script), Figma (Flowchart), FL Studio (Music, Sound), Audacity (Sound).</p>
                 <br>
                 <p>
                     Hit & Haunted's demo was a graduation-level project that was completed within a four-month timeframe. I worked alongside Yuki and Jillain for this project, my roles consisted of designing the characters,
@@ -61,7 +73,7 @@
                 </p>
             </section>
 
-            <section class = 'projectSection'>
+            <section class = 'projectSection' id = 'objective'>
                 <h3>Objective</h3>
                 <p>
                     The goal with Hit & Haunted was to gain experience in creating an industry-level game, with appropiate scale and to market and eventually release it to the public. At first,
@@ -76,18 +88,28 @@
 
             <section class = 'projectSection'> <!-- Draft Images -->
                 <figure>
-                    <img src = 'assets/img/hitandhaunted/beta hitman & ghost.png' class = 'modalImg zoomImg' alt = 'Beta designs for Ace and Eli (at the time, they were named as Hitman and Ghost)'>
+                    <img src = 'assets/img/hitandhaunted/beta hitman & ghost.png' class = 'zoomImg' onclick = "openModal('modal4', 'Beta designs for Ace and Eli (at the time, they were named as Hitman and Ghost)')" alt = 'Beta designs for Ace and Eli (at the time, they were named as Hitman and Ghost)'>
                     <figcaption>The initial designs of Hitman (Ace) and Ghost (Eli) for the first presentation. Sketched by me in Clip Studio.</figcaption>
                 </figure>
+                <div id = 'modal4' class = 'modal'>
+                    <span class="close" onclick = "closeModal('modal4')">&times;</span>
+                    <img class = "modalImg" src = 'assets/img/hitandhaunted/beta hitman & ghost.png' alt = 'Beta designs for Ace and Eli (at the time, they were named as Hitman and Ghost)'>
+                    <div class="caption"></div>
+                </div>
 
                 <figure>
-                    <img src = 'assets/img/hitandhaunted/betaFlow.png' class = 'modalImg zoomImg' alt = 'Rough sketches of how the game would play out, showing off dialogue and the planned perspective switching mechanic.'>
+                    <img src = 'assets/img/hitandhaunted/betaFlow.png' class = 'zoomImg' onclick = "openModal('modal5', 'Rough sketches showcasing the planned key feature of the game')" alt = 'Rough sketches of how the game would play out, showing off dialogue and the planned perspective switching mechanic.'>
                     <figcaption> Rough sketches showcasing the planned key feature of the game (switching perspectives) from the initial pitch as well as a glimpse into the dynamic between Ace and Eli.
                         Sketched in Clip Studio by me.</figcaption>
                 </figure>
+                <div id = 'modal5' class = 'modal'>
+                    <span class="close" onclick = "closeModal('modal5')">&times;</span>
+                    <img class = "modalImg" src = 'assets/img/hitandhaunted/betaFlow.png' alt = 'Rough sketches of how the game would play out, showing off dialogue and the planned perspective switching mechanic.'>
+                    <div class="caption"></div>
+                </div>
             </section>
 
-            <section class = 'projectSection'>
+            <section class = 'projectSection' id = 'characters'>
                 <h3>Ace & Eli</h3>
                 <p>
                     The protagonist: Ace and his partner: Eli, was the first thing I began writing, as both their personalities, role and backstory would decide what kind of world they live in as well as how the story would
@@ -100,7 +122,19 @@
                 </p>
             </section>
 
-            <section class = 'projectSection'>
+            <section class = 'projectSection'> <!-- Ace & Eli Image -->
+                <figure>
+                    <img src = 'assets/img/hitandhaunted/initial to final.png' class = 'zoomImg' onclick = "openModal('modal6', 'The iterations of Ace and Eli design to their finalized ones')" alt = 'Iterations on the designs of Ace and Eli after deciding to go forawrd with this idea.'>
+                    <figcaption>The iterations of Ace's and Eli's design to their finalized ones. Sketched by me in Clip Studio.</figcaption>
+                </figure>
+                <div id = 'modal6' class = 'modal'>
+                    <span class="close" onclick = "closeModal('modal6')">&times;</span>
+                    <img class = "modalImg" src = 'assets/img/hitandhaunted/initial to final.png' alt = 'Iterations on the designs of Ace and Eli after deciding to go forawrd with this idea.'>
+                    <div class="caption"></div>
+                </div>
+            </section>
+
+            <section class = 'projectSection' id = 'script'>
                 <h3>Script & Story</h3>
                 <p>
                     At first, the group got together to decide on the story beats of Hit & Haunted, we would have brainstorming sessions to work on this, this is where we would face our first dilemma. We would find the scope
@@ -121,7 +155,19 @@
                 </p>
             </section>
 
-            <section class = 'projectSection'>
+            <section class = 'projectSection'> <!-- Flow to script to flow again -->
+                <figure>
+                    <img src = 'assets/img/hitandhaunted/beat sheet to flowchart.png' class = 'zoomImg' onclick = "openModal('modal7', 'A segment of the beat sheet being expanded upon into the script and turned into the flowchart')" alt = 'Beat sheet to flowchart, showing how it went from general ideas to a script to a flowchart for game development.'>
+                    <figcaption>A segment of the beat sheet being expanded upon into the script and turned into the flowchart. The beat sheet and flowchart was done in Figma while the script was written in Final Draft.</figcaption>
+                </figure>
+                <div id = 'modal7' class = 'modal'>
+                    <span class="close" onclick = "closeModal('modal7')">&times;</span>
+                    <img class = "modalImg" src = 'assets/img/hitandhaunted/beat sheet to flowchart.png' alt = 'Beat sheet to flowchart, showing how it went from general ideas to a script to a flowchart for game development.'>
+                    <div class="caption"></div>
+                </div>
+            </section>
+
+            <section class = 'projectSection' id = 'audio'>
                 <h3>Music & Sound Design</h3>
                 <p>
                     I composed the music for the game in FL Studio, for the demo there are three total tracks: Ace's apartment, Eli's apartment and the cafe, with other areas being accompanied by diagetic sounds.
@@ -133,11 +179,30 @@
                 </p>
 
                 <p>
-                    Sound effects were a mix of sounds I gathered from online, sounds I edited in FL Studio and 
+                    Something important for gameplay was that the player could feel the difference when switching between Ace and Eli, so we made it so that everything, visually and audibly changes between perspectives.
+                    For audio, this meant that the track would switch from a more "normal" track to one that uses different instruments and effects (such as reverb and delay) to give it a more etheral feel. Although
+                    the composition would stay relaitvely the same, I made sure to include new and tweak already existing melodies as to not bore the player audio-wise.
+                </p>
+
+                <p>
+                    Sound effects were a mainly ones I gathered from online sources, with some being edited in FL Studio for what I wanted to use them for. Other ones, like that ones play whenever Eli's abilities
+                    are in play are ones that were created by me in FL Studio.  
                 </p>
             </section>
 
-            <section class = 'projectSection'>
+            <section class = 'projectSection'> <!-- Key Art Image -->
+                <figure>
+                    <img src = 'assets/img/hitandhaunted/flStudio.png' class = 'zoomImg' onclick = "openModal('modal8', `A look at the track for Ace's apartment in FL Studio, the top half being the original track, while the bottom is shows the additions for Eli's perspective.`)" alt = "A look at the track for Ace's apartment in FL Studio, the top half being the original track, while the bottom is shows the additions for Eli's perspective.">
+                    <figcaption>Key art for our game Hit & Haunted. Ace and Eli were drawn by Yuki and the image was arranged in Adobe Photoshop by me.</figcaption>
+                </figure>
+                <div id = 'modal8' class = 'modal'>
+                    <span class="close" onclick = "closeModal('modal8')">&times;</span>
+                    <img class = "modalImg" id = 'hhKeyArt' src = 'assets/img/hitandhaunted/flStudio.png' alt = "A look at the track for Ace's apartment in FL Studio, the top half being the original track, while the bottom is shows the additions for Eli's perspective.">
+                    <div class="caption"></div>
+                </div>
+            </section>
+
+            <section class = 'projectSection' id = 'playtesting'>
                 <h3>Playtesting and Marketing</h3>
                 <p>
                     Once the demo was close to completion we had playtesters try it out, all of which we made sure were only aware of the premise of the game. From this we learned about various bugs, as well as parts
@@ -151,7 +216,7 @@
                 </p>
             </section>
 
-            <section class = 'projectSection'>
+            <section class = 'projectSection' id = 'conclusion'>
                 <h3>Conclusion</h3>
                     <p>
                         Creating the demo has been a rewarding experience, and I'm elated to continue working on it with Yuki and Jillain. It has led to a professor offering to mentor us to continue development on the
@@ -159,24 +224,32 @@
                     </p>
 
                     <p>
-                        From this point on, things such as the flow of events and storyline are things I hope to improve, as well as to take the opportunity to improve at animation through creating shorts to upload on
+                        From this point on, things such as the soundeffects, flow of events, and storyline are things I hope to improve in the game, as well as to take the opportunity to improve at animation through creating shorts to upload on
                         our social media accounts.
                     </p>
             </section>
         </section>
 
+        <div class = 'bgContainer'>
+            <div class = 'scrollBGLEFT'></div>
+            <div class = 'scrollBGRIGHT'></div>
+        </div>
 
+        <script src = 'js/script.js'></script>
         <footer>
             <div class = 'navFooter'>
                 <div class = 'footerSection'>
-                    <h4>Contact</h4>
-                    <a href="./contactPage.html">Contact Us</a>
+                    <h4>Contact & About</h4>
+                    <a href="./about.html">About Me</a>
+                    <a href="./about.html#contact">Contact</a>
                 </div>
+
                 <div class = 'footerSection'>
                     <h4>Other Links</h4>
                     <a href = './StyleGuide.html'>Style Guide</a>
                     <a href = './StyleGuide.html#citation'>Citations</a>
-                    <a href = 'https://github.com/RCC1783/IAT339-P02'>GitHub Repository</a>
+                    <a href = 'https://github.com/LuggiLGH/P03'>GitHub Repository</a>
+                    <a href = 'https://joshua-luggi.webflow.io/'>Original Portfolio</a>
                 </div>
             </div>
         </footer>
