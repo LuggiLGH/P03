@@ -11,7 +11,7 @@
   <header>
       <div class = 'headerImg'>
         <a href = 'index.html'>
-          <img src = 'assets/img/logo.png' alt = "A logo for Joshua Ma's Portfolio."/>
+          <img src = 'assets/img/logo.svg' alt = "A logo for Joshua Ma's Portfolio."/>
         </a>
       </div>
   </header>
@@ -19,42 +19,66 @@
   <nav class = 'headerNav stickyHeader'>    
       <a href = 'index.html'>Home</a>     
   </nav>
+  <main>
+    <section class = 'aboutSection'>
+      <h2>About Me</h2>
+      <p>
+        Ever since I was a kid, I was always drawn to video games and stories (even if I got distracted in them for way too long!). I didn't realize it at the time, but it was always due to the characters. I would want to root for them as they found a way into my heart.
+        And now? I want to take that create that experience for others, I fell in love with the process of "growing" the character from a simple idea in my head to a fully fleshed-out character. I hope my work here demonstrates that well to you.
+      </p>
 
-  <section class = 'aboutSection'>
-    <h2>About Me</h2>
-    <p>
-      Ever since I was a kid, I was always drawn to video games and stories (even if I got distracted in them for way too long!). I didn't realize it at the time, but it was always due to the characters. I would want to root for them as they found a way into my heart.
-      And now? I want to take that create that experience for others, I fell in love with the process of "growing" the character from a simple idea in my head to a fully fleshed-out character. I hope my work here demonstrates that well to you.
-    </p>
+      <p>
+        I'm currently studying in the Interactive Arts and Technology program at SFU, and the process of creating a game was what fit the most with me. As it lets me take advantage of my various skills in creating fun visuals, composing catchy music, and
+        writing stories with enjoyable characters and dynamics to create games that be fun and engaging with solid visuals and catchy tunes.
+      </p>
 
-    <p>
-      I'm currently studying in the Interactive Arts and Technology program at SFU, and the process of creating a game was what fit the most with me. As it lets me take advantage of my various skills in creating fun visuals, composing catchy music, and
-      writing stories with enjoyable characters and dynamics to create games that be fun and engaging with solid visuals and catchy tunes.
-    </p>
-  </section>
+      <div class = 'aboutTest'>
+        <img tabindex = '0' class = 'zoomImg' src = 'assets/img/sona1.png' alt = 'A drawing of my internet persona, a cloaked skeleton with a fedora.' 
+        onclick = "openModal('modal1', 'A drawing of my internet persona, a cloaked skeleton with a fedora.')"
+        onkeydown = "checkKey('modal1', 'A drawing of my internet persona, a cloaked skeleton with a fedora.', event)"/>
+        <div id = 'modal1' class = 'modal' role = 'dialog' aria-label = 'A drawing of my internet persona, a cloaked skeleton with a fedora.' aria-modal = 'true'> <!-- Modal code referenced from https://www.w3schools.com/css/css3_images_modal.asp -->
+          <button class="close" onclick = "closeModal('modal1')" aria-label = 'Close modal'>&times;</button>
+          <img class = "modalImg" id = 'sona' src = 'assets/img/sona1.png' alt = 'A drawing of my internet persona, a cloaked skeleton with a fedora.'>
+          <div class="caption"></div>
+        </div>
 
-  <section class = 'aboutSection' id = 'contact'>
-    <section class = 'contactSection'>
-      <h2>Contact Me</h2>
-        <form class = 'textForm'>
-            <label for = 'name'>Name:</label>
-            <input type = 'text' id = 'name' name = 'name' placeholder = 'Name'>
-
-            <label for = 'email'>Email:</label>
-            <input type = 'email' id = 'email' name = 'email' placeholder = 'Email'>
-
-            <label for = 'subject'>Subject:</label>
-            <input type = 'text' id = 'subject' name = 'subject' placeholder = 'Subject'>
-
-            <label for = 'message'>Message:</label>
-            <textarea id = 'message' name = 'message' placeholder = 'Your message here...'></textarea>
-
-            <button type = 'submit'>Send Message</button>
-        </form>
-
+        <!-- Social Media -->
+        <a href = 'https://www.youtube.com/channel/UCW20qaN8ankj3H3IFDOYJZw'>
+          <img src = 'assets/img/youtube.png' alt = "The logo for YouTube."/>
+        </a>
+        <a href = 'https://twitter.com/'>
+          <img src = 'assets/img/twitter.png' alt = "The logo for Twitter."/>
+        </a>
+        <a href = 'https://www.instagram.com/'>
+          <img src = 'assets/img instagram.png' alt = "The logo for Instagram."/>
+        </a>
+        <a href = 'https://www.linkedin.com/in/joshua-ma-0a4708223/'>
+          <img src = 'assets/img/linkedin.png' alt = "The logo for LinkedIn."/>
+        </a>
+      </div>
     </section>
 
-  </section>
+    <section class = 'aboutSection' id = 'contact'>
+      <section class = 'contactSection' role = 'form'>
+        <h2>Contact Me</h2>
+          <form class = 'textForm'>
+              <label for = 'name'>Name:</label>
+              <input type = 'text' id = 'name' name = 'name' placeholder = 'Name'>
+
+              <label for = 'email'>Email:</label>
+              <input type = 'email' id = 'email' name = 'email' placeholder = 'Email'>
+
+              <label for = 'subject'>Subject:</label>
+              <input type = 'text' id = 'subject' name = 'subject' placeholder = 'Subject'>
+
+              <label for = 'message'>Message:</label>
+              <textarea id = 'message' name = 'message' placeholder = 'Your message here...'></textarea>
+
+              <button type = 'submit'>Send Message</button>
+          </form>
+        </section>
+      </section>
+    </main>
     <div class = 'bgContainer'>
       <div class = 'scrollBGLEFT'></div>
       <div class = 'scrollBGRIGHT'></div>

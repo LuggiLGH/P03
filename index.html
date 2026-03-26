@@ -4,52 +4,72 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
-  <link href="css/main.css" rel="stylesheet" />
+  <link href="css/main.css" rel="stylesheet"/>
+  <link href = 'css/home.css' rel = 'stylesheet'/>
 </head>
 
 <body>
   <header>
       <div class = 'headerImg'>
         <a href = 'index.html'>
-          <img src = 'assets/img/logo.png' alt = "A logo for Joshua Ma's Portfolio."/>
+          <img src = 'assets/img/logo.svg' alt = "A logo for Joshua Ma's Portfolio."/>
         </a>
       </div>
   </header>
 
-  <nav class = 'headerNav stickyHeader'>    
+  <nav class = 'headerNav stickyHeader' id = 'headerNav'>    
     <a href = '#home'>Home</a>     
     <a href = "#game">Games</a>
     <a href = "#art">Art</a>
     <a href = "#music">Music</a>
+    <button class = 'hamburger' type = 'button' aria-label = 'Open Menu'>
+      <span class = 'bar'></span>
+      <span class = 'bar'></span>
+      <span class = 'bar'></span>
+    </button>
   </nav>
-
-    <section id = 'home' class = 'homeSection'>
-        <h1>Heya. Welcome to my Portfolio.</h1>
+  
+  <main>
+    <section id = 'home' class = 'homeSection' aria-labelledby = 'homeNav'>
+        <h1 id = 'homeNav'>Heya. Welcome to my Portfolio.</h1>
         <h2>My name is Joshua Ma, I'm a game designer with an interest in creating fun games full of characters that find a way into your heart.</h2>
 
         <!-- Image here, animated drawing, interactable shelfs with various items (art, music, games) -->
         <div class = 'homeImg'>
-            <a href = '#games'>
-              <img src = 'assets/img/shelf1.png' alt = ''/> <!-- shelf1 -->
+          <div class = 'top'>
+            <a href = '#game'>
+              <img src = 'assets/img/home/gameIllust.png' alt = 'An illustration of various game boxes.'/>
+              <p class = 'homeText'>GAME PROJECTS</p>
             </a>
 
             <a href = '#art'>
-              <img src = 'assets/img/main.png' alt = ''/> <!-- main image, in the center -->
+              <img src = 'assets/img/home/charIllust.png' alt = 'An illustration of stick figures, meant to allude to character designs.'/> 
+              <p class = 'homeText'>ART</p>
             </a>
 
             <a href = '#music'>
-              <img src = 'assets/img/shelf2.png' alt = ''/> <!-- shelf2 -->
+              <img src = 'assets/img/home/musicIllust.png' alt = 'An illustration of various vinyl record covers.'/>
+              <p class = 'homeText'>MUSIC</p>
             </a>
+          </div>
+
+          <div class = 'bottom'>
+            <a href = 'about.html'>
+              <img src = 'assets/img/home/aboutIllust1.png' alt = "An animation of Joshua Ma's/my internet persona drawing on a tablet. Changes to look at the viewer when hovered."
+              class = 'aboutIllustIdle' id = 'aboutIllust'/> 
+              <img src = 'assets/img/home/aboutIllustHover.png' alt = "An animation of Joshua Ma's/my internet persona drawing on a tablet. Changes to look at the viewer when hovered." class = 'aboutIllustHover'/>
+            </a>
+          </div>
         </div>
     </section>
 
-    <section id = 'game' class = 'homeSection'> <!-- basically boxes next to each other -->
-      <h2>Projects</h2>
+    <section id = 'game' class = 'homeSection' aria-labelledby = 'game-projects'> <!-- basically boxes next to each other -->
+      <h2 id = 'game-projects'>Projects</h2>
 
       <div class = 'gameSection'>
         <article class = 'gameCover'>
           <a href = 'mima.html'>
-            <img src = 'assets/img/homeMima.png'class = 'zoomImg' alt = 'A game cover image for Mimas Adventure, a 2D sidescroller made for an SFU course.'/>
+            <img src = 'assets/img/home/homeMima.png'class = 'zoomImg' alt = 'A game cover image for Mimas Adventure, a 2D sidescroller made for an SFU course.'/>
           </a>
           <h3>Mima's Adventure</h3>
           <h4>Game Designer (2021)</h4>
@@ -58,7 +78,7 @@
 
         <article class = 'gameCover'>
           <a href = 'h&h.html'>
-            <img src = 'assets/img/homeHandH.png' class = 'zoomImg' alt = 'A game cover image for Hit & Haunted, a top-down investigation game. Created for a senior-level SFU course.'/>
+            <img src = 'assets/img/home/homeHandH.png' class = 'zoomImg' alt = 'A game cover image for Hit & Haunted, a top-down investigation game. Created for a senior-level SFU course.'/>
           </a>
           <h3>Hit & Haunted</h3>
           <h4>Game Designer (2025)</h4>
@@ -67,18 +87,20 @@
       </div>
     </section>
 
-    <section id = 'art' class = 'homeSection'> <!-- gallery -->
-      <h2>Character Designs</h2>
+    <section id = 'art' class = 'homeSection' aria-labelledby = 'char-designs'> <!-- gallery -->
+      <h2 id = 'char-designs'>Character Designs</h2>
       <div class = 'gallery'>
-        <article class = 'character'> <!-- mix of modal image and caption-->
+        <article class = 'character' > <!-- mix of modal image and caption-->
           <h3>Hones</h3>
           
           <figure>
-            <img id = 'myImg' src = 'assets/img/characters/hones ref.png' class = 'zoomImg' alt = 'A reference sheet for Hones, a skeleton caster/assassin.' onclick = "openModal('modal1', 'A reference sheet for Hones, a skeleton caster/assassin.')"/>
+            <img tabindex = '0' src = 'assets/img/characters/hones ref.png' loading = 'lazy'
+            class = 'zoomImg' alt = 'A reference sheet for Hones, a skeleton caster/assassin.' onclick = "openModal('modal1', 'A reference sheet for Hones, a skeleton caster/assassin.')"
+            onkeydown = 'checkKey("modal1", "A reference sheet for Hones, a skeleton caster/assassin.", event)'/>
             <figcaption>Hones, a skeleton assassin/caster.</figcaption>
-          </figure>
-          <div id = 'modal1' class = 'modal'> <!-- Modal code referenced from https://www.w3schools.com/css/css3_images_modal.asp -->
-            <span class="close" onclick = "closeModal('modal1')">&times;</span>
+          </figure>    
+          <div id = 'modal1' class = 'modal' role = 'dialog' aria-label = 'Hones artwork dialogue' aria-modal = 'true'> <!-- Modal code referenced from https://www.w3schools.com/css/css3_images_modal.asp -->
+            <button class="close" onclick = "closeModal('modal1')" aria-label = "Close modal">&times;</button>
             <img class = "modalImg" id = 'hones' src = 'assets/img/characters/hones ref.png' alt = 'A reference sheet for Hones, a skeleton caster/assassin.'>
             <div class="caption"></div>
           </div>
@@ -93,11 +115,13 @@
           <h3>Leornah</h3>
           
           <figure>
-            <img id = 'myImg' src = 'assets/img/characters/a8.png' class = 'zoomImg' alt = 'A reference sheet for Leornah, a human warrior.' onclick = "openModal('modal2', 'A reference sheet for Leornah, a human warrior.')"/>
+            <img tabindex = '0' src = 'assets/img/characters/a8.png' loading = 'lazy' class = 'zoomImg' alt = 'A reference sheet for Leornah, a human warrior.' onclick = "openModal('modal2', 'A reference sheet for Leornah, a human warrior.')"
+            onkeydown = 'checkKey("modal2", "A reference sheet for Leornah, a human warrior.", event)'/>
             <figcaption>Leornah, a human warrior.</figcaption>
           </figure>
-          <div id = 'modal2' class = 'modal'>
-            <span class="close" onclick = "closeModal('modal2')">&times;</span>
+
+          <div id = 'modal2' class = 'modal' role = 'dialog' aria-label = 'Leornah artwork dialogue' aria-modal = 'true'>
+            <button class="close" onclick = "closeModal('modal2')" aria-label = "Close modal">&times;</button>
             <img class = "modalImg" id = 'leornah' src = 'assets/img/characters/a8.png' alt = 'A reference sheet for Leornah, a human warrior.'>
             <div class="caption"></div>
           </div>
@@ -110,8 +134,8 @@
       </div>
     </section>
 
-      <section id = 'music' class = 'homeSection'> <!-- sample of work and link to spotify/soundcloud-->
-        <h2>Samples</h2>
+      <section id = 'music' class = 'homeSection' aria-labelledby = 'musicTracks'> <!-- sample of work and link to spotify/soundcloud-->
+        <h2 id = 'musicTracks'>Samples</h2>
         
         <div class = 'gallery'>
           <article class = 'track'>
@@ -142,7 +166,7 @@
               <div>
               <h4>Type of Work</h4>
               <p>Personal</p>
-              <p>A battle song for Hones. Meant to be in the context of a game.</a></p>
+              <p>A battle song made in the context of a game for Hones.</p>
               </div>
               <div>
                 <a href = 'https://soundcloud.com/luigifan54321/prove-your-worth-v2'><h4>Listen on SoundCloud</h4></a>
@@ -152,6 +176,7 @@
           </article>
         </div>
     </section>
+  </main>
 
     <div class = 'bgContainer'>
       <div class = 'scrollBGLEFT'></div>

@@ -1,0 +1,114 @@
+.homeImg .top {
+    justify-content: center;
+    align-items: center;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.homeImg .bottom {
+    justify-content: center;
+    align-items: center;
+
+    display: flex;
+}
+
+.homeImg a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.homeImg img {
+    width: auto;
+    max-width: 100%;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+}
+
+.homeImg .top img {
+    opacity: 1;
+}
+
+.homeImg .top a:hover img {
+    opacity: 0.5;
+}
+
+.homeImg .top a:focus img {
+    opacity: 0.5;
+}
+
+.homeImg .top text {
+    margin-bottom: 3rem;
+
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+}
+
+.homeImg .top a:hover text {
+    opacity: 1;
+}
+
+.homeImg .top a:focus text {
+    opacity: 1;
+}
+
+.aboutIllustHover {
+    position: absolute;
+    opacity: 0;
+}
+
+.bottom a:hover .aboutIllustHover {
+    opacity: 0.5;
+}
+
+.bottom a:focus .aboutIllustHover {
+    opacity: 0.5;
+}
+
+.aboutIllustIdle {
+    opacity: 1;
+    transition-property: opacity;
+    transition-duration: 0.5s;
+
+    z-index: 1;
+}
+
+.bottom a:hover .aboutIllustIdle {
+    opacity: 0;
+}
+
+.bottom a:focus .aboutIllustIdle {
+    opacity: 0;
+}
+
+@media screen and (max-width: 1130px) {
+    .homeImg .top img {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 1000px) { /* Mobile */
+    .aboutIllustHover {
+        opacity: 0;
+    }
+
+    .bottom a:hover .aboutIllustHover {
+        opacity: 0;
+    }
+    .bottom a:focus .aboutIllustHover {
+        opacity: 0;
+    }
+
+    .bottom a:hover .aboutIllustIdle {
+        opacity: 0.5;
+    }
+
+    .bottom a:focus .aboutIllustIdle {
+        opacity: 0.5;
+    }
+}
