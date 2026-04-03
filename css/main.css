@@ -17,6 +17,10 @@ html {
   overflow-x: hidden;
 }
 
+.wrapper {
+  overflow-x: hidden;
+}
+
 header {
   background-color: #0b083b;
   color:#b0b0b0;
