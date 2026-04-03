@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Style Guide</title>
-  <link href="css/main.css" rel="stylesheet" />
+  <link href="css/main.css" rel="stylesheet"/>
 </head>
 
 <body>
@@ -39,10 +39,10 @@
         <p>.button</p>
 
         <h4>Sample Code</h4>
-        <code>&lt;a href="#" class="button"&gt;Default Button&lt;/a&gt;</code>
+        <code>&lt;button class="button"&gt;Default Button&lt;/button&gt;</code>
 
         <h4>Rendered element:</h4>
-        <a class="button" href="#">Default Button</a>
+        <button class = "button">Default Button</button>
       </section>
 
       <section class = 'element'>
@@ -109,20 +109,20 @@
             <p>.zoomImg, .modal, .modalImg</p>
 
 
-            <img class = 'zoomImg' id = 'myImg' src = 'assets/img/characters/hones ref.png' alt = 'A reference sheet for Hones, a skeleton caster/assassin.' onclick = "openModal('modal1', 'A reference sheet for Hones, a skeleton caster/assassin.')"/>
+            <img class = 'zoomImg' id = 'myImg' src = 'assets/img/characters/hones.webp' alt = 'A reference sheet for Hones, a skeleton caster/assassin.' onclick = "openModal('modal1', 'A reference sheet for Hones, a skeleton caster/assassin.')"/>
 
             <div id = 'modal1' class = 'modal'>
               <span class="close" onclick = "closeModal('modal1')">&times;</span>
-              <img class = "modalImg" id = 'hones' src = 'assets/img/characters/hones ref.png' alt = 'A reference sheet for Hones, a skeleton caster/assassin.'>
+              <img class = "modalImg" id = 'hones' src = 'assets/img/characters/hones.webp' alt = 'A reference sheet for Hones, a skeleton caster/assassin.'>
               <div class="caption"></div>
             </div>
             <h4>Sample Code</h4>
             <code>
-              &lt;img class = 'zoomImg' id = 'myImg' src = 'assets/img/characters/hones ref.png' alt = 'A reference sheet for Hones, a skeleton caster/assassin.' onclick = "openModal('modal1', 'A reference sheet for Hones, a skeleton caster/assassin.')"/&gt;
+              &lt;img class = 'zoomImg' id = 'myImg' src = 'assets/img/characters/hones.webp' alt = 'A reference sheet for Hones, a skeleton caster/assassin.' onclick = "openModal('modal1', 'A reference sheet for Hones, a skeleton caster/assassin.')"/&gt;
 
               &lt;div id = 'modal1' class = 'modal'&gt;
                 &lt;span class="close" onclick = "closeModal('modal1')"&gt;&amp;times;&lt;/span&gt;
-                &lt;img class = "modalImg" id = 'hones' src = 'assets/img/characters/hones ref.png' alt = 'A reference sheet for Hones, a skeleton caster/assassin.'&gt;
+                &lt;img class = "modalImg" id = 'hones' src = 'assets/img/characters/hones.webp' alt = 'A reference sheet for Hones, a skeleton caster/assassin.'&gt;
                 &lt;div class="caption"&gt;&lt;/div&gt;
               &lt;/div&gt;
             </code>
@@ -130,10 +130,16 @@
 
         <section class="element">
             <h3>Image as a Link</h3>
-            <h4>CSS selector:</h4>
               <a href = 'h&h.html'>
-                <img src = 'assets/img/homeHandH.png' alt = 'A game cover image for Hit & Haunted, a top-down investigation game. Created for a senior-level SFU course.'/>
+                <img src = 'assets/img/home/homeHandH.webp' alt = 'A game cover image for Hit & Haunted, a top-down investigation game. Created for a senior-level SFU course.'/>
               </a>
+
+              <h4>Sample Code</h4>
+              <code>
+                &lt;a href = 'h&h.html'&gt;
+                  &lt;img src = 'assets/img/home/homeHandH.webp' alt = 'A game cover image for Hit & Haunted, a top-down investigation game. Created for a senior-level SFU course.'/&gt;
+                &lt;/a&gt;
+              </code>
         </section>
       </section>
 
@@ -185,6 +191,7 @@
               &lt;/ul&gt;
             </code>
       </section>
+    </section>
 
     <section id="combined_elements" class = 'stylesheet'>
       <h2>Combined Elements</h2>
@@ -192,24 +199,24 @@
         <section class = 'element'>
             <h3>Modal Image with Caption</h3>
           <figure>
-            <img id = 'myImg' src = 'assets/img/characters/hones ref.png' class = 'zoomImg' alt = 'A reference sheet for Hones, a skeleton caster/assassin.' onclick = "openModal('modal1', 'A reference sheet for Hones, a skeleton caster/assassin.')"/>
+            <img id = 'myImg' src = 'assets/img/characters/hones.webp' class = 'zoomImg' alt = 'A reference sheet for Hones, a skeleton caster/assassin.' onclick = "openModal('modal1', 'A reference sheet for Hones, a skeleton caster/assassin.')"/>
             <figcaption>Hones, a skeleton assassin/caster.</figcaption>
           </figure>
           <div id = 'modal1' class = 'modal'> <!-- Modal code referenced from https://www.w3schools.com/css/css3_images_modal.asp -->
             <span class="close" onclick = "closeModal('modal1')">&times;</span>
-            <img class = "modalImg" id = 'hones' src = 'assets/img/characters/hones ref.png' alt = 'A reference sheet for Hones, a skeleton caster/assassin.'>
+            <img class = "modalImg" id = 'hones' src = 'assets/img/characters/hones.webp' alt = 'A reference sheet for Hones, a skeleton caster/assassin.'>
             <div class="caption"></div>
           </div>
 
             <h4>Sample Code</h4>
             <code>
               &lt;figure&gt;
-                &lt;img id = 'myImg' src = 'assets/img/characters/hones ref.png' class = 'zoomImg' alt = 'A reference sheet for Hones, a skeleton caster/assassin.' onclick = "openModal('modal1', 'A reference sheet for Hones, a skeleton caster/assassin.')"/&gt;
+                &lt;img id = 'myImg' src = 'assets/img/characters/hones.webp' class = 'zoomImg' alt = 'A reference sheet for Hones, a skeleton caster/assassin.' onclick = "openModal('modal1', 'A reference sheet for Hones, a skeleton caster/assassin.')"/&gt;
                 &lt;figcaption&gt;Hones, a skeleton assassin/caster.&lt;/figcaption&gt;
               &lt;/figure&gt;
               &lt;div id = 'modal1' class = 'modal'&gt; 
                 &lt;span class="close" onclick = "closeModal('modal1')"&gt;&amp;times;&lt;/span&gt;
-                &lt;img class = "modalImg" id = 'hones' src = 'assets/img/characters/hones ref.png' alt = 'A reference sheet for Hones, a skeleton caster/assassin.'&gt;
+                &lt;img class = "modalImg" id = 'hones' src = 'assets/img/characters/hones.webp' alt = 'A reference sheet for Hones, a skeleton caster/assassin.'&gt;
                 &lt;div class="caption"&gt;&lt;/div&gt;
               &lt;/div&gt;
             </code>

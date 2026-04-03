@@ -28,6 +28,14 @@ function checkKey(modalId, caption, event) {
   }
 };
 
+function galleryCheckKey(button, filter, event) {
+  if (event.key === 'Enter' || event.key === ' ') {
+    event.preventDefault();
+    filterGallery(filter);
+  }
+}
+
+
 // Close modal when Escape key is pressed
 document.addEventListener('keydown', function(event) {
   if (event.key === 'Escape' && currentModal) {
@@ -70,23 +78,3 @@ document.querySelectorAll('.headerNav a').forEach(link => {
     }
   })
 });
-
-// Home Image Animation [ Referenced from geeksforgeeks : https://www.geeksforgeeks.org/javascript/how-to-create-frame-by-frame-animation-using-css-and-javascript/ ]
-var images = new Array();
-
-images = [
-  'assets/img/home/aboutIllust1.png',
-  'assets/img/home/aboutIllust2.png'
-];
-
-setInterval("Animate()", 400);
-var i = 0;
-
-function Animate() {
-  document.getElementById("aboutIllust").src = images[i];
-  i++;
-
-  if (i == images.length) {
-    i = 0;
-  }
-}

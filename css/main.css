@@ -4,8 +4,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); /* Heading Fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); /* Body Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap'); /* Subtitle Fonts */
 
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap'); /* Body Fonts */
 
 /*
   GENERAL / TXT
@@ -27,13 +28,11 @@ header {
 
 .headerImg {
   width: 100%;
-  display: flex;
   display: block;
-  justify-content: center;
 }
 
 .headerImg img {
-  width: 75px;
+  width: 125px;
   height: 5%;
 
   display: block;
@@ -53,29 +52,12 @@ header h1, p {
   padding: 1rem;
 }
 
-.headerTxt { /* Code here referenced from w3school [https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_text] */
-  font-family: 'Barlow', sans-serif;
-  text-transform: uppercase;
-  font-weight: 600; 
-  font-size: 48px;
-  color:#EEE;
-}
-
 body {
-  font-family: "Roboto", sans-serif;
   background-color: #2c2a42;
   color: #EEEEEE;
   max-width: 80vw;
 
   margin: 0 auto;
-}
-
-section {
-
-}
-
-figure {
-  font-family: 'Roboto', sans-serif;
 }
 
 footer {
@@ -92,6 +74,70 @@ footer {
 
   margin: 5rem;
 }
+
+/* 
+  TEXT ELEMENTS -------------------
+*/
+
+h1, h2, h3, h4 {
+  z-index: 1;
+}
+
+h1 {
+  font-family: 'Barlow', sans-serif;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+h2 {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+  margin-top: 1rem; 
+}
+
+h3 {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+h4 {
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+p, a, figcaption, ul, li {
+  font-family: 'Assistant', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+nav a:hover, nav a:focus {
+  text-decoration: none;
+}
+
+code {
+  background-color: #525863;
+  
+  padding: 2rem;
+  display: block;
+}
+
+a {
+  color: #92cea6;
+  text-decoration: none;
+
+  transition-duration: 0.5s;
+  transition-property: color;
+}
+
+a:hover {
+  color:#fda358;
+}
+
 
 /*
   BACKGROUND (cited from https://css-tricks.com/books/fundamental-css-tactics/infinite-scrolling-background-image/)
@@ -118,14 +164,14 @@ footer {
 }
 
 .scrollBGLEFT {
-  background: url('../assets/img/bannerLeft.png') repeat-y;
+  background: url('../assets/img/bannerLeft.webp') repeat-y;
 
   background-position-x: left;
   background-position-y: 0;
 }
   
 .scrollBGRIGHT {
-  background: url('../assets/img/bannerRight.png') repeat-y;
+  background: url('../assets/img/bannerRight.webp') repeat-y;
   
   background-position-x: right;
   background-position-y: 0;
@@ -144,9 +190,26 @@ footer {
   INTERACTIVE ELEMENTS -------------------
 */
 
+/* actual button */
+button {
+  padding: 1rem;
+  color: #FFFF;
+  background-color: #0b083b;
+  border: none;
+  text-decoration: none;
+  transition-property: background-color; 
+  transition-duration: 0.5s;
+
+  cursor: pointer;
+
+  font-family: 'Assistant', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
 /* Styling for the navigation button */
 
-.button, button {
+.button {
   display: inline-block;
   padding: 0.5rem;
   color: #FFFF;
@@ -156,11 +219,20 @@ footer {
   transition-duration: 0.5s;
 }
 
-.button:hover, .button:focus, button:hover {
+.button:hover {
   color: #0b083b;
   background-color: #6fe4b7;
   transition-property: background-color;
-  transition-duration: 0s;
+}
+
+.button.active {
+  display: inline-block;
+  padding: 0.5rem;
+  color: #0b083b;
+  background-color: #6fe4b7;
+  text-decoration: none;
+  transition-property: background-color; 
+  transition-duration: 0.5s;
 }
 
 .headerNav {
@@ -222,118 +294,9 @@ footer {
   margin: 0.25rem 0;
 }
 
-
-/* 
-  TEXT ELEMENTS -------------------
-*/
-
-h1 {
-  font-family: 'Barlow', sans-serif;
-  text-transform: uppercase;
-  font-weight: 800;
-}
-
-h2 {
-  font-family: 'Barlow', sans-serif;
-  font-weight: 600;
-  margin-top: 1rem; 
-}
-
-h3 {
-  font-family: 'Barlow', sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  font-style: italic;
-  margin-top: 1rem;
-}
-
-h4 {
-  font-family: 'Barlow', sans-serif;
-  font-weight: 600;
-  font-size: 20px;
-}
-
-p {
-  font-family: 'Roboto', sans-serif;
-  font-size: 18px;
-}
-
-nav a:hover, nav a:focus {
-  text-decoration: none;
-}
-
-code {
-  background-color: #525863;
-  
-
-  padding: 2rem;
-  display: block;
-}
-
-a {
-  color: #92cea6;
-  text-decoration: none;
-
-  transition-duration: 0.5s;
-  transition-property: color;
-}
-
-a:hover {
-  color:#fda358;
-}
-
-
-
 /* 
   COMBINED ELEMENTS -------------------
 */
-
-.navBar {
-  list-style-type: none;
-  max-width: 200px;
-  width: 25%;
-  background-color: #393847;
-}
-
-.navBar li a {
-  padding: 1rem;
-
-  display: block;
-  color: #EEE;
-  text-decoration: none;
-  text-transform: uppercase;
-
-  background-color: #0b083b;
-
-  transition-property: background-color;
-  transition-duration: 0.5s;
-}
-
-.navBar li a:hover {
-  background-color: #b34b22;
-} 
-
-/* ITEM */
-
-.item {
-  max-width: 270px;
-  width: 50%;
-
-  padding: 1rem;
-  margin-bottom: 1rem;
-  background-color: #22212e;
-  flex-shrink: 1;
-
-  border-style: solid;
-  border-width: 2px;
-}
-
-.itemDetails {
-  margin: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
 .zoomImg {
   max-width: 20vw;
@@ -416,104 +379,6 @@ a:hover {
   font-size: 24px;
 }
 
-/* Home Page */
-
-.homeSection, .gameSection, .aboutSection {
-  padding: 5rem;
-}
-
-.gameSection {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  gap: 1rem;
-}
-
-.gameCover {
-  width: 50vw;
-  max-width: 200px;
-}
-
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.character {
-  background-color: #22212e;
-  width: 100vw;
-  max-width: 20vw;
-  padding: 1rem;
-}
-
-.track {
-  background-color: #22212e;
-  max-width: 20vw;
-  padding: 1rem;
-}
-
-.track audio {
-  width: 100%;
-  color-scheme: dark;
-}
-
-.track h3 {
-  margin: 1rem;
-}
-
-.track h4 {
-  margin: 1rem;
-}
-
-.track p {
-  margin: 1rem;
-}
-
-
-
-@media screen and (max-width: 920px) {
-  .homeSection, .gameSection, .aboutSection {
-    padding: 1rem;
-    flex-wrap: wrap;
-  }
-
-  .gameSection, .gallery {
-    align-items: center;
-    justify-content: center;
-  }
-
-  .gameCover {
-    width: 100%;
-    max-width: 250px;
-  }
-
-  .gameCover .zoomImg {
-    display: block;
-    margin: 0 auto;
-  }
-
-  .zoomImg {
-    max-width: 30vw;
-  }
-
-  .track {
-    width: 100vw;
-    max-width: 100%;
-  }
-  .character {
-    width: 100vw;
-    max-width: 100%;
-    text-align: center;
-  } 
-}
-
-@media screen and (max-width: 725px) {
-  .gameCover {
-    text-align: center;
-  }
-}
-
 /* Project Pages */
 
 .projectInfo, .projectOverview {
@@ -535,6 +400,10 @@ a:hover {
   grid-column: 2;
 }
 
+.figureSection .zoomImg {
+  max-width: 50vw;
+}
+
 
 @media screen and (max-width: 1275px) {
   body {
@@ -554,52 +423,14 @@ a:hover {
   }
 }
 
-/* About Page */
-.contactSection {
-  background-color: #22212e;
-  padding: 2rem;
-}
-
-.textForm {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.textForm input {
-  padding: 0.5rem;
-  background-color: #393847;
-  color: #EEE;
-  border: none;
-}
-
-.textForm textarea {
-  padding: 3rem;
-  background-color: #393847;
-  color: #EEE;
-  border: none;
-}
-
-.textForm button {
-  width: 30%;
-  align-self: flex-end;
-}
-
-.aboutTest {
-  display: flex;
-  margin: 0 auto;
-  align-items: center;
-  justify-content: center;
-}
-
-.aboutTest img {
-  max-width: 20vw;
-}
-
 /* Style Guide */
 .stylesheet h2 {
   margin: 5rem;
 }
+
+.element h2 {
+  margin: 0;
+} 
 
 /* GENERAL RESPONSIVENESS */
 @media screen and (max-width: 1000px) {

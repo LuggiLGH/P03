@@ -86,6 +86,156 @@
     opacity: 0;
 }
 
+.homeSection, .topHomeSection, .aboutSection {
+    padding: 5rem;
+}
+
+.gameCover, .character, .track, .threeDee {
+    background-color: #22212e;
+    padding: 1rem;
+}
+
+/* TEXT */
+.topHomeSection h2 {
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.topHomeSection h2 {
+    color: white;
+}
+
+.topHomeSection h2 strong {
+    color: #92e4a4;
+    font-weight: 600;
+}
+
+.homeSection h2 {
+    font-size: 30px;
+    font-weight: 400;
+    color: #92e4a4;
+}
+
+/* GAMES */
+
+.gameSection {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.gameCover {
+    width: 50vw;
+    max-width: 250px;
+}
+
+.gameCover p {
+    padding: 0;
+}
+
+.gameCover h3 {
+    font-weight: 600;
+    color: #92e4a4;
+}
+
+/* ART */
+
+.galleryFilters {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+/* Hide gallery entries by default; JS adds .show to matching items */
+.content {
+    display: none;
+}
+
+.content.show {
+    display: block;
+}
+
+.character, .threeDee {
+    width: 100vw;
+    max-width: 20vw;
+}
+
+/* MUSIC */
+
+.track {
+    max-width: 20vw;
+}
+
+.track audio {
+    width: 100%;
+    color-scheme: dark;
+}
+
+.track h3 {
+    margin: 1rem;
+}
+
+.track h4 {
+    margin: 1rem;
+}
+
+.track p {
+    margin: 1rem;
+}
+
+/* RESPONSIVENESS */
+
+@media screen and (max-width: 920px) {
+    .homeSection, .gameSection, .aboutSection {
+        padding: 1rem;
+        flex-wrap: wrap;
+    }
+
+    .gameSection, .gallery {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .gameCover {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .gameCover .zoomImg {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .zoomImg {
+        max-width: 30vw;
+    }
+
+    .track {
+        width: 100vw;
+        max-width: 100%;
+    }
+
+    .character {
+        width: 100vw;
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 725px) {
+    .gameCover {
+        text-align: center;
+    }
+}
+
+
 @media screen and (max-width: 1130px) {
     .homeImg .top img {
         width: 50%;
