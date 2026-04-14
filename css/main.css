@@ -18,7 +18,7 @@ html {
 }
 
 .wrapper {
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 header {
@@ -359,8 +359,6 @@ button {
   font-size: 60px;
   font-weight: bold;
   cursor: pointer;
-
-  border-color: transparent;
   background-color: transparent;
 
   transition-duration: 0.5s;

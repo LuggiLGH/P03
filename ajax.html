@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX</title>
+    <link href="css/main.css" rel="stylesheet" />
+    <link href = 'css/project.css' rel = 'stylesheet'/>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.webp">
+</head>
+
+    <body>
+        <div class = 'wrapper'>
+        <header>
+            <div class = 'headerImg'>
+                <a href = 'index.html'>
+                    <img src = 'assets/img/logo.svg' alt = "A logo for Joshua Ma's Portfolio."/>
+                </a>
+            </div>
+        </header>
+
+        <nav class = 'headerNav stickyHeader' id = 'headerNav'>       
+            <a href = "#overview">Overview</a>
+            <a href = "#context">Context</a>
+            <a href = "#objective">Objective</a>
+            <a href = "#development">Development</a>
+            <a href = "#lvlDesign">Level Design</a>
+            <a href = "#conclusion">Conclusion</a>
+            <button class = 'hamburger' type = 'button' aria-label = 'Open Menu'>
+                <span class = 'bar'></span>
+                <span class = 'bar'></span>
+                <span class = 'bar'></span>
+            </button>
+        </nav>
+        <main>
+
+            <section class = 'projectInfo' style = "background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/img/ajax/ss1.webp')">
+                <h1>AJAX</h1>
+                <h2>ROLES</h2>
+                    <h3>Character Designer, Environment Artist, Animator</h3>
+            </section>
+
+            <div class = 'projectOverview'>
+                <section class = 'projectSection' id = 'overview'> <!-- Overview / Takeaways -->
+                    <h3>Takeaways</h3>
+                    <ul>
+                        <li>Designing for constraints (time, scope, team size) leads to more focused and feasible solutions, such as simplifying character design and asset complexity.</li>
+                        <li>Rapid prototyping and clear role delegation are essential for effective team collaboration under tight deadlines.</li>
+                        <li>Environmental storytelling can effectively communicate narrative and theme without interrupting gameplay.</li>
+                    </ul>
+                    <h3>Project Overview</h3>
+                    <p>
+                        AJAX is a short 2D side-scroller created for the A2B2 Game Jam (2022) under the theme of “Corruption.” The game follows E-TBTP, a robot investigating the source of corruption spreading across a planet.
+                    </p>
+
+                    <p>
+                        You can play the game on itch.io here: <a href = 'https://pokevii.itch.io/ajax'>AJAX</a>
+                    </p>
+
+                    <p>
+                        I worked on the project alongside pokevii, Altiami, and an anonymous composer, contributing as part of a small interdisciplinary team.
+                    </p>
+                </section>
+
+                <div class = 'figureSection'> <!-- Logo -->
+                    <figure>
+                        <iframe src = 'https://youtu.be/EhyG4ESAX6I?t=10300'>
+
+                        </iframe>
+                        <figcaption>AJAX being played on a livestream featuring all the games submitted to the A2B2 Game Jam (2022).</figcaption>
+                    </figure>
+                </div>
+
+                <section class = 'projectSection' id = 'context'>
+                    <h3>Context</h3>
+                    <p><b>Genre:</b> Action, Platformer</p>
+                    <p><b>Team Size:</b> 4</p>
+                    <p><b>Platform:</b> PC</p>
+                    <p><b>Development Time:</b> June 24th - June 26th 2022 (Two Days)</p>
+                    <p><b>Tools Used:</b> Aseprite (Artwork), Unity (Level Design)</p>
+                </section>
+
+                <div class = 'figureSection'> <!-- Logo -->
+                    <figure>
+                        <img tabindex = '0' src = 'assets/img/ajax/logo.webp' class = 'zoomImg'
+                        onclick = "openModal('modal3', 'The keyart/logo for AJAX, illustrated by Miyagiie.')"
+                        alt = "The keyart/logo for AJAX, illustrated by Miyagiie."
+                        onkeydown = "checkKey('modal3', 'The keyart/logo for AJAX, illustrated by Miyagiie.', event)"/>
+                        <figcaption>The keyart/logo for AJAX, illustrated by Miyagiie.</figcaption>
+                    </figure>
+                    <div id = 'modal3' class = 'modal' role = 'dialog' aria-label = "Sketch and finalized version of the logo for AJAX" aria-modal = 'true'>
+                        <button class="close" onclick = "closeModal('modal3')" aria-label = 'Close modal'>&times;</button>
+                        <img class = "modalImg" src = 'assets/img/ajax/logo.webp' alt = "The keyart/logo for AJAX, illustrated by Miyagiie.">
+                        <div class="caption"></div>
+                    </div>
+                </div>
+
+                <section class = 'projectSection' id = 'objective'>
+                    <h3>Objective</h3>
+                    <p>
+                        With the theme of "Corruption" in mind along with the lore document provided, we quickly ended up at the idea of a robot investigating a planet that's been giving off strange energies. With only 48 hours to make the game,
+                        we quickly asigned roles to quickly ideate and prototype, the art, the gameplay, and the music. I was in charge of the designing and animating the player character: E-TBTP, a robot, as well creating the assets for different environments:
+                        the forest and the ruins. With the time-constraint, it was vital I quickly iterated on the art for the game.
+                    </p>
+
+                    <p>
+                        For the robot, E-TBTP, I quickly went through different iteractions of the design, originally going for a more humanoid design, before I simplified the character's silouhette through giving the
+                        character track wheels as its only limbs along with its boxy body and head. This kind of design for a two-shape character would lead to a character that was unique, easily identifiable as robotic,
+                        and would be one that would be easier to animate given the time constraint.
+                    </p>
+                </section>
+
+                <div class = 'figureSection'> <!-- Doc Image -->
+                    <figure>
+                        <img tabindex = '0' src = 'assets/img/ajax/Screenshot_149.webp' class = 'zoomImg'
+                        onclick = "openModal('modal4', `The few iterations of E-TBTP before settling on the track wheel design.`)"
+                        alt = "The few iterations of E-TBTP before settling on the track wheel design." loading = 'lazy'
+                        onkeydown = "checkKey('modal4', `The few iterations of E-TBTP before settling on the track wheel design.`, event)"/>
+                        <figcaption>The few iterations of E-TBTP before settling on the track wheel design.</figcaption>
+                    </figure>
+                    <div id = 'modal4' class = 'modal' role = 'dialog' aria-label = "The few iterations of E-TBTP before settling on the track wheel design." aria-modal = 'true'>
+                        <button class="close" onclick = "closeModal('modal4')" aria-label = 'Close modal'>&times;</button>
+                        <img class = "modalImg" src = 'assets/img/ajax/Screenshot_149.webp' alt = "The few iterations of E-TBTP before settling on the track wheel design.">
+                        <div class="caption"></div>
+                    </div>
+
+                    <figure>
+                        <img tabindex = '0' src = 'assets/img/ajax/etbtp.gif' class = 'zoomImg'
+                        onclick = "openModal('modal8', `The final design for E-TBTP.`)"
+                        alt = "The final design for E-TBTP." loading = 'lazy'
+                        onkeydown = "checkKey('modal8', `The final design for E-TBTP.`, event)"
+                        style = 'max-width: 20%;'/>
+                        <figcaption>The final design for E-TBTP.</figcaption>
+                    </figure>
+                    <div id = 'modal8' class = 'modal' role = 'dialog' aria-label = "The final design for E-TBTP." aria-modal = 'true'>
+                        <button class="close" onclick = "closeModal('modal8')" aria-label = 'Close modal'>&times;</button>
+                        <img class = "modalImg" src = 'assets/img/ajax/etbtp.gif' alt = "The final design for E-TBTP.">
+                        <div class="caption"></div>
+                    </div>
+                </div>
+
+                <section class = 'projectSection' id = 'development'>
+                    <h3>Development</h3>
+                    <p>
+                        Once the animations on E-TBTP were completed, I moved onto creating art assets for two environments, the forest and the ruins. This included the tilesets and the background, with a focus on maintaining strong visual readability and
+                        ensuring the player character remained visually distinct within each environment.
+                    </p>
+
+                    <p>
+                        To achieve this, I intentionally designed the environments around color contrast and palette separation. E-TBTP uses a bluish color scheme, so I selected either darker tones for the ruins or complementary green hues for the forest.
+                        This approach supports visual hierarchy by ensuring the player character remains easy to spot on screen, improving moment-to-moment clarity during gameplay, especially during tough to navigate sections.
+                    </p>
+
+                    <p>
+                        For the forest, I split it into different assets to allow pokevii to create a parallax effect with the background in Unity, this effect would give the player a sense of the world being far bigger than the confines of the screen.
+                        This, along with the lighter colour-palette gave the player a lot of freedom to get used to the controls of the game as well as contrasting heavily against the ruins, which was far more confined and tense.
+                    </p>
+                </section>
+
+                <div class = 'figureSection'> <!-- Gameplay Image -->
+                    <figure>
+                        <img tabindex = '0' src = 'assets/img/ajax/ss1.webp' class = 'zoomImg'
+                        onclick = "openModal('modal7', `A screenshot showcasing the forest area in AJAX.`)"
+                        alt = "A screenshot showcasing the forest area in AJAX." loading = 'lazy'
+                        onkeydown = "checkKey('modal7', `A screenshot showcasing the forest area in AJAX.`, event)"/>
+                        <figcaption>A screenshot showcasing the forest area in AJAX.</figcaption>
+                    </figure>
+                    <div id = 'modal7' class = 'modal' role = 'dialog' aria-label = "A screenshot showcasing the forest area in AJAX." aria-modal = 'true'>
+                        <button class="close" onclick = "closeModal('modal7')" aria-label = 'Close modal'>&times;</button>
+                        <img class = "modalImg" src = 'assets/img/ajax/ss1.webp' alt = "A screenshot showcasing the forest area in AJAX.">
+                        <div class="caption"></div>
+                    </div>
+
+                    <figure>
+                        <img tabindex = '0' src = 'assets/img/ajax/ss2.webp' class = 'zoomImg'
+                        onclick = "openModal('modal7', `A screenshot showcasing the ruins area in AJAX.`)"
+                        alt = "A screenshot showcasing the ruins area in AJAX." loading = 'lazy'
+                        onkeydown = "checkKey('modal7', `A screenshot showcasing the ruins area in AJAX.`, event)"/>
+                        <figcaption>A screenshot showcasing the ruins area in AJAX.</figcaption>
+                    </figure>
+                    <div id = 'modal7' class = 'modal' role = 'dialog' aria-label = "A screenshot showcasing the ruins area in AJAX." aria-modal = 'true'>
+                        <button class="close" onclick = "closeModal('modal7')" aria-label = 'Close modal'>&times;</button>
+                        <img class = "modalImg" src = 'assets/img/ajax/ss2.webp' alt = "A screenshot showcasing the ruins area in AJAX.">
+                        <div class="caption"></div>
+                    </div>
+                </div> 
+
+                <section class = 'projectSection' id = 'lvlDesign'>
+                    <h3>Level Design</h3>
+                    <p>
+                        Near the end of development, I was asked to quickly assemble the final bit of the level design by pokevii as time was beginning to run out as he needed to finish the programming. The section I helped assemble was to
+                        represent the corruption of the world, with bits of the environment from the ruins and the forest scattering the area before columinating with the player ending up in a graveyard full of robots sent before it,
+                        communicating the fact that the organization behind the robot is also corrupt as they don't even care for the player.
+                    </p>
+
+                    <p>
+                        Upon revisiting the game, I realized a certain section of this level lacked clear guidance for the player, as the block the player was meant to hop on was camoflauged with the background on top of being cut off
+                        by the top of the screen. Something like this immediately pulled me out of immersion as I wasn't sure where I was supposed to go for a moment, and it shows how something obvious to me in the past as the designer
+                        could be something that isn't obvious to a player, and how important it is to have clear visual communication in a game, especially in a platformer where the player needs to be able to quickly read the environment to react to it.
+                    </p>
+                </section>
+
+                <div class = 'figureSection'> <!-- Art Image -->
+                    <figure>
+                        <img tabindex = '0' src = 'assets/img/ajax/Screenshot_150.webp' class = 'zoomImg'
+                        onclick = "openModal('modal5', `A screenshot of the final section of the game.`)"
+                        alt = "A screenshot of the final section of the game." loading = 'lazy'
+                        onkeydown = "checkKey('modal5', `A screenshot of the final section of the game.`, event)"/>
+                        <figcaption>A screenshot of the final section of the game.</figcaption>
+                    </figure>
+                    <div id = 'modal5' class = 'modal' role = 'dialog' aria-label = "A screenshot of the final section of the game." aria-modal = 'true'>
+                        <button class="close" onclick = "closeModal('modal5')" aria-label = 'Close modal'>&times;</button>
+                        <img class = "modalImg" src = 'assets/img/ajax/Screenshot_150.webp' alt = "A screenshot of the final section of the game.">
+                        <div class="caption"></div>
+                    </div>
+                </div>
+
+                <section class = 'projectSection' id = 'conclusion'>
+                    <h3>Conclusion</h3>
+                    <p>
+                        Overall, despite the crunch from the 48-hour deadline, AJAX was a wonderful experience for me as it was the first time I had worked on a game with a team. As I was already close with the team members
+                        I mainly learned about working with a team in a game jam and how it required clear communication, parallel production, as well as to be prepared for any unexpected tasks to be assigned to you.
+                    </p>
+                </section>
+            </div>
+        </main>
+
+        <div class = 'bgContainer' aria-hidden = 'true'>
+            <div class = 'scrollBGLEFT'></div>
+            <div class = 'scrollBGRIGHT'></div>
+        </div>
+
+        <script src = 'js/script.js'></script>
+
+        <footer>
+            <div class = 'navFooter'>
+                <div class = 'footerSection'>
+                    <h4>Contact & About</h4>
+                    <a href="./about.html">About Me</a>
+                    <a href="./about.html#contact">Contact</a>
+                </div>
+
+                <div class = 'footerSection'>
+                    <h4>Other Links</h4>
+                    <a href = './StyleGuide.html'>Style Guide</a>
+                    <a href = './StyleGuide.html#citation'>Citations</a>
+                    <a href = 'https://github.com/LuggiLGH/P03'>GitHub Repository</a>
+                    <a href = 'https://joshua-luggi.webflow.io/'>Original Portfolio</a>
+                </div>
+            </div>
+        </footer>
+        </div>
+    </body>
+</html>

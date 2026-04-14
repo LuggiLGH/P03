@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dungeon Manager</title>
+    <link href="css/main.css" rel="stylesheet" />
+    <link href = 'css/project.css' rel = 'stylesheet'/>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.webp">
+</head>
+
+    <body>
+        <div class = 'wrapper'>
+        <header>
+            <div class = 'headerImg'>
+                <a href = 'index.html'>
+                    <img src = 'assets/img/logo.svg' alt = "A logo for Joshua Ma's Portfolio."/>
+                </a>
+            </div>
+        </header>
+
+        <nav class = 'headerNav stickyHeader' id = 'headerNav'>       
+            <a href = "#overview">Overview</a>
+            <a href = "#context">Context</a>
+            <a href = "#objective">Objective</a>
+            <a href = "#development">Development</a>
+            <a href = "#playtesting">Playtesting & Iterating</a>
+            <a href = "#conclusion">Conclusion</a>
+            <button class = 'hamburger' type = 'button' aria-label = 'Open Menu'>
+                <span class = 'bar'></span>
+                <span class = 'bar'></span>
+                <span class = 'bar'></span>
+            </button>
+        </nav>
+        <main>
+
+            <section class = 'projectInfo' style = "background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/img/dungeonManager/finalBuild.jpg')">
+                <h1>Dungeon Manager</h1>
+                <h2>ROLES</h2>
+                    <h3>Game Developer, Game Designer</h3>
+            </section>
+
+            <div class = 'projectOverview'>
+                <section class = 'projectSection' id = 'overview'> <!-- Overview / Takeaways -->
+                    <h3>Takeaways</h3>
+                    <ul>
+                        <li>Mechanical changes or additions can significantly impact balance, pacing, and overall player experience.</li>
+                        <li>Hosted playtesting sessions, learned how different groups engage with the game and how players optimize the system in unexpected ways.</li>
+                        <li>Iterated on core mechanics through structured playtesting, using player feedback to refine balance and gameplay flow.</li>
+                    </ul>
+                    <h3>Project Overview</h3>
+                    <p>
+                        Dungeon Manager was an academic project completed within four weeks. I worked alongside Rania, Angela, Edwin and Michael.
+                        I designed how the game would work along with rules and various cards with different effects.
+                        I also organized various playtesting groups to analyze what parts of the game had flaws that needed to be addressed for a balanced system.
+                    </p>
+
+                    <p>
+                        You can play the game here: <a href = 'https://steamcommunity.com/sharedfiles/filedetails/?id=2936126483'>Dungeon Manager</a> (You will need to own Tabletop Simular on Steam to play!)
+                    </p>
+                </section>
+
+                <div class = 'figureSection'> <!-- Logo -->
+                    <figure>
+                        <iframe src = 'https://www.youtube.com/embed/E3mrSLTzGvk'>
+
+                        </iframe>
+                        <figcaption>A playthrough of the game with my commentary over it.</figcaption>
+                    </figure>
+                </div>
+
+                <section class = 'projectSection' id = 'context'>
+                    <h3>Context</h3>
+                    <p><b>Genre:</b> Strategy</p>
+                    <p><b>Team Size:</b> 4</p>
+                    <p><b>Platform:</b> PC (Windows, Mac)</p>
+                    <p><b>Development Time:</b> January - February 2023 (Four Weeks)</p>
+                    <p><b>Tools Used:</b> Tabletop Simulator (Engine), Adobe Photoshop (Card Art, Layout)</p>
+                </section>
+
+                <div class = 'figureSection'> <!-- Logo -->
+                    <figure>
+                        <img tabindex = '0' src = 'assets/img/dungeonManager/finalBuild.jpg' class = 'zoomImg'
+                        onclick = "openModal('modal3', `A screenshot of Dungeon Manager's final build.`)"
+                        alt = "A screenshot of Dungeon Manager's final build."
+                        onkeydown = "checkKey('modal3', `A screenshot of Dungeon Manager's final build.`, event)"/>
+                        <figcaption>A screenshot of Dungeon Manager's final build.</figcaption>
+                    </figure>
+                    <div id = 'modal3' class = 'modal' role = 'dialog' aria-label = "A screenshot of Dungeon Manager's final build." aria-modal = 'true'>
+                        <button class="close" onclick = "closeModal('modal3')" aria-label = 'Close modal'>&times;</button>
+                        <img class = "modalImg" src = 'assets/img/dungeonManager/finalBuild.jpg' alt = "A screenshot of Dungeon Manager's final build.">
+                        <div class="caption"></div>
+                    </div>
+                </div>
+
+                <section class = 'projectSection' id = 'objective'>
+                    <h3>Objective</h3>
+                    <p>
+                        The purpose of this project was to create a board game that tackled and met the principle of People Fun, which is part of the 4 Keys 2 Fun by Nicole Lazzaro.
+                    </p>
+                </section>
+
+                <section class = 'projectSection' id = 'development'>
+                    <h3>Development</h3>
+                    <p>
+                        Before we began ideating on the game, we went through various board games we enjoyed to use them as a possible source of inspiration.
+                        Out of all the games we went through, the game Exploding Kittens was the one we enjoyed the most. This was due to the exciting risk factor the game carried through the game's instant death cards, this exciting yet
+                        fear-inducing game mechanic served as the key factor to Hard Fun we took away from our play session.
+                    </p>
+
+                    <p>
+                        We worked together on deciding the premise of the game and the mechanics of the game to try to capture the feeling of excitement and fear.
+                        I eventually suggested it being a twist on the theme of dungeon crawling board games, where rather than players typically taking the roles of the heroes;
+                        they take the roles of the dungeon master.
+                    </p>
+
+                    <p>
+                        I brainstormed and wrote down possible mechanics and rules of the game in a document with Michael's assistance. After feedback, I created the first build of the game in Tabletop Simulator.
+                    </p>
+                </section>
+
+                <div class = 'figureSection'> <!-- Gameplay Image -->
+                    <figure>
+                        <img tabindex = '0' src = 'assets/img/dungeonManager/explodinKittens.png' class = 'zoomImg'
+                        onclick = "openModal('modal7', `A screenshot of our play session of Exploding Kittens.`)"
+                        alt = "A screenshot of our play session of Exploding Kittens." loading = 'lazy'
+                        onkeydown = "checkKey('modal7', `A screenshot of our play session of Exploding Kittens.`, event)"/>
+                        <figcaption>A screenshot of our play session of Exploding Kittens.</figcaption>
+                    </figure>
+                    <div id = 'modal7' class = 'modal' role = 'dialog' aria-label = "A screenshot of our play session of Exploding Kittens" aria-modal = 'true'>
+                        <button class="close" onclick = "closeModal('modal7')" aria-label = 'Close modal'>&times;</button>
+                        <img class = "modalImg" src = 'assets/img/dungeonManager/explodinKittens.png' alt = "A screenshot of our play session of Exploding Kittens.">
+                        <div class="caption"></div>
+                    </div>
+
+                    <figure>
+                        <img tabindex = '0' src = 'assets/img/dungeonManager/earlyDev.png' class = 'zoomImg'
+                        onclick = "openModal('modal8', `A screenshot of the early development build of Dungeon Manager being playtested in Tabletop Simulator.`)"
+                        alt = "A screenshot of the early development build of Dungeon Manager being playtested in Tabletop Simulator." loading = 'lazy'
+                        onkeydown = "checkKey('modal8', `A screenshot of the early development build of Dungeon Manager being playtested in Tabletop Simulator.`, event)"/>
+                        <figcaption>A screenshot of the early development build of Dungeon Manager being playtested in Tabletop Simulator.</figcaption>
+                    </figure>
+                    <div id = 'modal8' class = 'modal' role = 'dialog' aria-label = "A screenshot of the early development build of Dungeon Manager being playtested in Tabletop Simulator" aria-modal = 'true'>
+                        <button class="close" onclick = "closeModal('modal8')" aria-label = 'Close modal'>&times;</button>
+                        <img class = "modalImg" src = 'assets/img/dungeonManager/earlyDev.png' alt = "A screenshot of the early development build of Dungeon Manager being playtested in Tabletop Simulator.">
+                        <div class="caption"></div>
+                    </div>
+                </div> 
+
+                <section class = 'projectSection' id = 'playtesting'>
+                    <h3>Playtesting & Iterating</h3>
+                    <p>
+                        All of us agreed to set up a playtesting group to see what works and doesn't work in the initial build of the game,
+                        due to the time constraint the group I assembled was made up of close friends of mine. While I knew they wouldn't try to sugarcoat
+                        any criticisms it is nonetheless a point to be mindful of.
+                    </p>
+
+                    <p>
+                        Initial feedback was relatively positive, with the balance between each card feeling good.
+                        However, they would have liked more cards that interacted with other players. Another critique was
+                        that the cards we wanted to have a large impact did not elicit the emotion we were expecting (mainly due to the timing of their reveal).
+                        I made changes based on this feedback and had them try it again, with the main critique they had that they wanted the game to have an
+                        additional layer of complexity for replayability.
+                    </p>
+
+                    <p>
+                        As an potential answer I decided to add a shop mechanic to the game, and then opted to try it out first with a different group for playtesting. The shop had monsters you could upgrade your minions into.
+                        An option I gave players would be the option to gain currency instead of normally drawing a card. What this playtest would reveal is a huge issue with the addition of the shop mechanic
+                        as it caused the game to slow tremendously compared to before.
+                    </p>
+
+                    <p>
+                        The game's design favored defensive play, rewarding players who preferred a cautious approach. This imbalance was
+                        evident in the limited impact of fear-inducing cards on well-prepared players. Conversely, players
+                        unprepared for such cards were at a disadvantage, leading to early knockouts despite the game's potential for extended play.
+                    </p>
+                    <p>
+                        To try to make this less of an issue, I went through the various cards in the game and tried to buff
+                        offensive options while nerfing the effectiveness of defensive options. I also experimented by adding
+                        cheap monster minions a player can purchase for early survivability.
+                    </p>
+                </section>
+
+                <div class = 'figureSection'> <!-- Art Image -->
+                    <figure>
+                        <img tabindex = '0' src = 'assets/img/dungeonManager/earlyShop.png' class = 'zoomImg'
+                        onclick = "openModal('modal5', `The shop mechanic, an addition made later in the game's development cycle.`)"
+                        alt = "The shop mechanic, an addition made later in the game's development cycle." loading = 'lazy'
+                        onkeydown = "checkKey('modal5', `The shop mechanic, an addition made later in the game's development cycle.`, event)"/>
+                        <figcaption>The shop mechanic, an addition made later in the game's development cycle.</figcaption>
+                    </figure>
+                    <div id = 'modal5' class = 'modal' role = 'dialog' aria-label = "The shop mechanic, an addition made later in the game's development cycle." aria-modal = 'true'>
+                        <button class="close" onclick = "closeModal('modal5')" aria-label = 'Close modal'>&times;</button>
+                        <img class = "modalImg" src = 'assets/img/dungeonManager/earlyShop.png' alt = "The shop mechanic, an addition made later in the game's development cycle.">
+                        <div class="caption"></div>
+                    </div>
+
+                    <figure>
+                        <img tabindex = '0' src = 'assets/img/dungeonManager/finalShop.png' class = 'zoomImg'
+                        onclick = "openModal('modal6', `The final version of the shop mechanic.`)"
+                        alt = "The final version of the shop mechanic." loading = 'lazy'
+                        onkeydown = "checkKey('modal6', `The final version of the shop mechanic.`, event)"/>
+                        <figcaption>The final version of the shop mechanic.</figcaption>
+                    </figure>
+                    <div id = 'modal6' class = 'modal' role = 'dialog' aria-label = "The final version of the shop mechanic." aria-modal = 'true'>
+                        <button class="close" onclick = "closeModal('modal6')" aria-label = 'Close modal'>&times;</button>
+                        <img class = "modalImg" src = 'assets/img/dungeonManager/finalShop.png' alt = "The final version of the shop mechanic.">
+                        <div class="caption"></div>
+                    </div>
+                </div>
+
+                <section class = 'projectSection' id = 'conclusion'>
+                    <h3>Conclusion</h3>
+                    <p>
+                        Overall I am happy with the product that was submitted.
+                        I found the process of hosting playtest sessions extremely enjoyable, as well as educational as it
+                        showed me how much a game can change even with the slightest addition. Though it is clear to me
+                        that the game still needs tweaking before it can be considered polished.
+                    </p>
+                </section>
+            </div>
+        </main>
+
+        <div class = 'bgContainer' aria-hidden = 'true'>
+            <div class = 'scrollBGLEFT'></div>
+            <div class = 'scrollBGRIGHT'></div>
+        </div>
+
+        <script src = 'js/script.js'></script>
+
+        <footer>
+            <div class = 'navFooter'>
+                <div class = 'footerSection'>
+                    <h4>Contact & About</h4>
+                    <a href="./about.html">About Me</a>
+                    <a href="./about.html#contact">Contact</a>
+                </div>
+
+                <div class = 'footerSection'>
+                    <h4>Other Links</h4>
+                    <a href = './StyleGuide.html'>Style Guide</a>
+                    <a href = './StyleGuide.html#citation'>Citations</a>
+                    <a href = 'https://github.com/LuggiLGH/P03'>GitHub Repository</a>
+                    <a href = 'https://joshua-luggi.webflow.io/'>Original Portfolio</a>
+                </div>
+            </div>
+        </footer>
+        </div>
+    </body>
+</html>

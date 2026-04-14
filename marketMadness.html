@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Night Market Madness</title>
+    <link href="css/main.css" rel="stylesheet" />
+    <link href = 'css/project.css' rel = 'stylesheet'/>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.webp">
+</head>
+
+    <body>
+        <div class = 'wrapper'>
+        <header>
+            <div class = 'headerImg'>
+                <a href = 'index.html'>
+                    <img src = 'assets/img/logo.svg' alt = "A logo for Joshua Ma's Portfolio."/>
+                </a>
+            </div>
+        </header>
+
+        <nav class = 'headerNav stickyHeader' id = 'headerNav'>       
+            <a href = "#overview">Overview</a>
+            <a href = "#context">Context</a>
+            <a href = "#objective">Objective</a>
+            <a href = "#development">Development</a>
+            <a href = "#coding">Coding</a>
+            <a href = "#conclusion">Conclusion</a>
+            <button class = 'hamburger' type = 'button' aria-label = 'Open Menu'>
+                <span class = 'bar'></span>
+                <span class = 'bar'></span>
+                <span class = 'bar'></span>
+            </button>
+        </nav>
+        <main>
+
+            <section class = 'projectInfo' style = "background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/img/nmm/ss.webp')">
+                <h1>Night Market Madness</h1>
+                <h2>ROLES</h2>
+                    <h3>Modeler, Animator, Composer, Co-Coder</h3>
+            </section>
+
+            <div class = 'projectOverview'>
+                <section class = 'projectSection' id = 'overview'> <!-- Overview / Takeaways -->
+                    <h3>Takeaways</h3>
+                    <ul>
+                        <li>Implemented roaming NPC systems to enhance environmental immersion and create dynamic player navigation challenges.</li>
+                        <li>Designed distinct character silhouettes and animations to improve visual readability and communicate player feedback.</li>
+                        <li>Developed reference sheets and coordinated with team members to streamline the 3D modeling and animation pipeline.</li>
+                    </ul>
+                    <h3>Project Overview</h3>
+                    <p>
+                        Night Market Madness academic project completed within three months, I worked alongside Kate, Isabelle and Jeremey.
+                        Together we decided on the premise of the game, created the designs, models and code for the game within Unity.
+                    </p>
+                </section>
+
+                <div class = 'figureSection'> <!-- Logo -->
+                    <figure>
+                        <iframe src = 'https://www.youtube.com/embed/c-FOIxPua6c'>
+
+                        </iframe>
+                        <figcaption>An overview of Night Market Madness' plot and its mechanics created by Jeremy Kontulahi.</figcaption>
+                    </figure>
+                </div>
+
+                <section class = 'projectSection' id = 'context'>
+                    <h3>Context</h3>
+                    <p><b>Genre:</b> Adventure</p>
+                    <p><b>Team Size:</b> 4</p>
+                    <p><b>Platform:</b> PC (Windows Only)</p>
+                    <p><b>Development Time:</b> September - December 2024 (Three Months)</p>
+                    <p><b>Tools Used:</b> FL Studio (Music), Blender (Modeling), Unity (Coding & Implementation)</p>
+                </section>
+
+                <div class = 'figureSection'> <!-- Logo -->
+                    <figure>
+                        <img tabindex = '0' src = 'assets/img/nmm/nmmLogo.png' class = 'zoomImg'
+                        onclick = "openModal('modal3', 'Logo for Night Market Madness, created by Kate.')"
+                        alt = "Logo for Night Market Madness, created by Kates."
+                        onkeydown = "checkKey('modal3', 'Logo for Night Market Madness, created by Kate.', event)"/>
+                        <figcaption>Logo for Night Market Madness, created by Kate.</figcaption>
+                    </figure>
+                    <div id = 'modal3' class = 'modal' role = 'dialog' aria-label = "Logo for Night Market Madness, created by Kate" aria-modal = 'true'>
+                        <button class="close" onclick = "closeModal('modal3')" aria-label = 'Close modal'>&times;</button>
+                        <img class = "modalImg" src = 'assets/img/nmm/nmmLogo.png' alt = "Logo for Night Market Madness, created by Kate.">
+                        <div class="caption"></div>
+                    </div>
+                </div>
+
+                <section class = 'projectSection' id = 'objective'>
+                    <h3>Objective</h3>
+                    <p>
+                        Night Market Madness was a senior-level VR game, meant to demonstrate our understanding of VR development in Unity. At first, each member of the team pitched an idea for what kind of VR
+                        game we could create, and after voting, we decided on the idea where you go around helping vendors in a night market to get ingredients for your Grandma.
+                    </p>
+
+                    <p>
+                        We divided our roles, Jeremy would handle the bulk of the programming, Kate and Isabelle would handle the models for the environment and create concept art for the map layout and character concepts,
+                        while I would also create concept art for characters, reference sheets for their models, create the models and animate them, as well as compose a track for the game.
+                        We would also all collaborate on the design of the game, making sure to communicate our progress and give each other feedback on our work.
+                    </p>
+                </section>
+
+                <div class = 'figureSection'> <!-- Doc Image -->
+                    <figure>
+                        <img tabindex = '0' src = 'assets/img/nmm/Screenshot_155.png' class = 'zoomImg'
+                        onclick = "openModal('modal4', `Various concept sketches for the game, creating by Kate, Isabelle and I.`)"
+                        alt = "Various concept sketches for the game, creating by Kate, Isabelle and I." loading = 'lazy'
+                        onkeydown = "checkKey('modal4', `Sections from the proposal document for Mima's Adventure, it shows planned mechanics and the basic narrative.`, event)"/>
+                        <figcaption>Various concept sketches for the game, creating by Kate, Isabelle and I.</figcaption>
+                    </figure>
+                    <div id = 'modal4' class = 'modal' role = 'dialog' aria-label = "Various concept sketches for the game, creating by Kate, Isabelle and I." aria-modal = 'true'>
+                        <button class="close" onclick = "closeModal('modal4')" aria-label = 'Close modal'>&times;</button>
+                        <img class = "modalImg" src = 'assets/img/nmm/Screenshot_155.png' alt = "Various concept sketches for the game, creating by Kate, Isabelle and I.">
+                        <div class="caption"></div>
+                    </div>
+                </div>
+
+                <section class = 'projectSection' id = 'development'>
+                    <h3>Development</h3>
+                    <p>
+                        With an aesthetic of cute humanoid animals similar to games like Animal Crossing, I began ideating on the designs for Grandma as well as vendors you would encounter in the game. I aimed to 
+                        make sure each character was visually distinct in terms of both species, and personality. For example, there's a bunny vendor with bags under his eyes, appearing impatient and clearly
+                        overworked, while there's a squid with a shadow hovering over their eyes, giving them both a shy and mysterious look.
+                        I also made sure to create reference sheets for each character, so that the modeling process would be easier and more efficient, as I would have a clear idea of what I wanted to create before I started modeling.
+                    </p>
+
+                    <p>
+                        Using said reference sheet, I would then model, rig and animate the characters in Blender before implementing them in Unity, utilizing Unity's finite state machine to control when each animation would play.
+                        I talked with Jeremy beforehand to know what kind of animations I would need to create, and made sure to animate them that their intention was clear for the player, such as nodding when the player succeded
+                        or shook their head when the player failed, giving them clear visual feedback on their performance. Their animations can be found in the following google drive: 
+                        <a href = 'https://drive.google.com/drive/u/3/folders/1EIGHgsg3SPkR5r0SjbBj4781bdM0Daj3' target = '_blank' rel = 'noopener'>Animations</a>
+                    </p>
+
+                    <p>
+                        Lastly, I would compose a track for the game, I originally meant for it to be played whenever a player would begin a mini-game with a vendro, but we felt that it fit the overall vibe of the game, and kept
+                        the player alert to the time limit thanks to the songs fast pace.
+                    </p>
+
+                    <article class = 'track' style = 'background-color: #22212e; max-width: 20vw; padding: 1rem'>
+                        <h3>Mini Game</h3>
+                        <audio controls style = 'width: 100%; color-scheme: dark;'>
+                            <source src = 'assets/audio/445game.ogg' type = 'audio/ogg'/>
+                            Your browser does not support the audio element.
+                        </audio>
+                    </article>
+                </section>
+
+                <div class = 'figureSection'> <!-- Gameplay Image -->
+                    <figure>
+                        <img tabindex = '0' src = 'assets/img/nmm/image.png' class = 'zoomImg'
+                        onclick = "openModal('modal7', `Sketches showcasing the character designs for Grandma and vendors.`)"
+                        alt = "Sketches showcasing the character designs for Grandma and vendors." loading = 'lazy'
+                        onkeydown = "checkKey('modal7', `Sketches showcasing the character designs for Grandma and vendors.`, event)"/>
+                        <figcaption>Sketches showcasing the character designs for Grandma and vendors.</figcaption>
+                    </figure>
+                    <div id = 'modal7' class = 'modal' role = 'dialog' aria-label = "Sketches showcasing the character designs for Grandma and vendors." aria-modal = 'true'>
+                        <button class="close" onclick = "closeModal('modal7')" aria-label = 'Close modal'>&times;</button>
+                        <img class = "modalImg" src = 'assets/img/nmm/image.png' alt = "Sketches showcasing the character designs for Grandma and vendors.">
+                        <div class="caption"></div>
+                    </div>
+
+                    <figure>
+                        <img tabindex = '0' src = 'assets/img/nmm/bunny.png' class = 'zoomImg'
+                        onclick = "openModal('modal8', `A screenshot of Blender, showcasing a WIP of the bunny vendor model.`)"
+                        alt = "A screenshot of Blender, showcasing a WIP of the bunny vendor model." loading = 'lazy'
+                        onkeydown = "checkKey('modal8', `A screenshot of Blender, showcasing a WIP of the bunny vendor model.`, event)"/>
+                        <figcaption>A screenshot of Blender, showcasing a WIP of the bunny vendor model.</figcaption>
+                    </figure>
+                    <div id = 'modal8' class = 'modal' role = 'dialog' aria-label = "A screenshot of Blender, showcasing a WIP of the bunny vendor model." aria-modal = 'true'>
+                        <button class="close" onclick = "closeModal('modal8')" aria-label = 'Close modal'>&times;</button>
+                        <img class = "modalImg" src = 'assets/img/nmm/bunny.png' alt = "A screenshot of Blender, showcasing a WIP of the bunny vendor model.">
+                        <div class="caption"></div>
+                    </div>
+                </div> 
+
+                <section class = 'projectSection' id = 'coding'>
+                    <h3>Coding</h3>
+                    <p>
+                        To help sell the frantic nature of the game, I was tasked with implementing roaming NPCs that would walk around the map, they were meant to make the market feel more alive,
+                        and also to give the player a sense of urgency as they would have to weave through the crowd to get to the vendors before time runs out.
+                        I implemented this by using Unity's NavMesh system, which allowed me to easily create a pathfinding system for the NPCs,
+                        next, I made sure the NPCs did try to avoid walking into the player and each other, making them feel more natural and less like sliding obstacles.
+                    </p>
+
+                    <p>
+                        To help make sure their behavior wasn't predicatble, I made sure to ahve them choose a random stall to visit and look at for a moment, before choosing another random stall to visit.
+                        To make sure they walked around the map naturally, I placed checkpoints around the map that the NPC would use as a guide instead of trying to beeline straight for their choosen stall.
+                        To complete this, I utilized the finite state machine I set up for the vendors to handle their animations, which included walking around and looking at the stall. There were also
+                        plans to allow them to be pushed by the player, so I programmed them to be affected by physics, anytime they detect a collisison, they would become stunned for a moment, halting
+                        their pathfinding and movement before they get back up and continue on their way. While it served no purpose, I believe it could be a fun interaction to help immerse the player
+                        in the VR experience.
+                    </p>
+
+                    <p>
+                        Unfortunately, Jeremy was unable to implement the NPCs in time for the final submission, but I was able to test them in a separate scene, and they worked as intended, giving me confidence
+                        that they would have been a great addition to the game.
+                    </p>
+                </section>
+
+                <div class = 'figureSection'> <!-- Art Image -->
+                    <figure>
+                        <video width = "100%" height = "100%" controls>
+                            <source src = 'assets/video/nmm/physicsTest.mp4' type = 'video/mp4'/>
+                            Your browser does not support the video tag.
+                        </video>
+                        <figcaption>A video showcasing the NPCs being affected by physics.</figcaption>
+                    </figure>
+                </div>
+
+                <section class = 'projectSection' id = 'conclusion'>
+                    <h3>Conclusion</h3>
+                    <p>
+                        Overall, I am proud of what we were able to accomplish with Night Market Madness, we were able to create a fun and engaging VR game that showcased our skills in game development.
+                        While there were some issues with the game, such as the NPCs not being implemented in time, I believe that we were able to create a solid foundation for the game.
+                    </p>
+                </section>
+            </div>
+        </main>
+
+        <div class = 'bgContainer' aria-hidden = 'true'>
+            <div class = 'scrollBGLEFT'></div>
+            <div class = 'scrollBGRIGHT'></div>
+        </div>
+
+        <script src = 'js/script.js'></script>
+
+        <footer>
+            <div class = 'navFooter'>
+                <div class = 'footerSection'>
+                    <h4>Contact & About</h4>
+                    <a href="./about.html">About Me</a>
+                    <a href="./about.html#contact">Contact</a>
+                </div>
+
+                <div class = 'footerSection'>
+                    <h4>Other Links</h4>
+                    <a href = './StyleGuide.html'>Style Guide</a>
+                    <a href = './StyleGuide.html#citation'>Citations</a>
+                    <a href = 'https://github.com/LuggiLGH/P03'>GitHub Repository</a>
+                    <a href = 'https://joshua-luggi.webflow.io/'>Original Portfolio</a>
+                </div>
+            </div>
+        </footer>
+        </div>
+    </body>
+</html>

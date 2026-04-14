@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mima's Adventure</title>
-  <link href="css/main.css" rel="stylesheet" />
-  <link href = 'css/project.css' rel = 'stylesheet'/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mima's Adventure</title>
+    <link href="css/main.css" rel="stylesheet" />
+    <link href = 'css/project.css' rel = 'stylesheet'/>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.webp">
 </head>
 
     <body>
@@ -44,12 +45,18 @@
                     <h3>Takeaways</h3>
                     <ul>
                         <li>Experienced the development pipeline for game development (Ideating, Prototyping, Testing, Asset Creation).</li>
-                        <li>Learned to carefully and rigorously debug a game.</li>
-                        <li>Developed skills in asset creation and integration.</li>
+                        <li>Iterative design process, rapidly programmed and tested the core gameplay before commiting towards aesthetic improvements.</li>
+                        <li>Implemented visual feedback to enhance player engagement.</li>
+                        <li>Gained experience balancing scope and production constraints, including making strategic trade-offs between programming, art, and audio.</li>
                     </ul>
                     <h3>Project Overview</h3>
                     <p>
                         Mima's Adventure is a short 2D side-scroller. You play as Mima, a riceball who had their fries stolen!
+                    </p>
+
+                    <p>
+                        Mima's Adventure was the first game I ever made, it was a solo academic project I completed at SFU within four weeks. I created the game in Processing, the art in Clip Studio Paint and
+                        Aseprite, and the music and sound effects in FL Studio. 
                     </p>
 
                     <p>
@@ -71,13 +78,8 @@
                     <p><b>Genre:</b> Action, Platformer</p>
                     <p><b>Team Size:</b> 1</p>
                     <p><b>Platform:</b> PC (Windows Only)</p>
-                    <p><b>Development Time:</b> March - April 2021</p>
+                    <p><b>Development Time:</b> March - April 2021 (Four Weeks)</p>
                     <p><b>Tools Used:</b> Processing (Game Engine), Aseprite (Artwork), FL Studio (Music, Sound Effects)</p>
-
-                    <p>
-                        Mima's Adventure was the first game I ever made, it was a solo academic project I completed at SFU within four weeks. I created the game in Processing, the art in Clip Studio Paint and
-                        Aseprite, and the music and sound effects in FL Studio. 
-                    </p>
                 </section>
 
                 <div class = 'figureSection'> <!-- Logo -->
@@ -98,29 +100,16 @@
                 <section class = 'projectSection' id = 'objective'>
                     <h3>Objective</h3>
                     <p>
-                        Mima's Adventure was meant to demonstrate what we've learned about Processing over during the course. With only four weeks to make the game, I thought that a 2D side-scroller with a simple plot
-                        would be the most feasible, as I could put allocate most of my time into working on the gameplay.
+                        Mima's Adventure was a final project meant to demonstrate the technical skills we've developed with Processing throughout the course. With only four weeks to create the game, I
+                        opted to create a 2D side-scroller with a simple plot, as it's a game genre with well-established design conventions that I'm familiar with and
+                        would likely have many examples to draw inspiration from. Allowing me to allocate most of my time into programming the game with those conventions in mind, allowing players to intuitively
+                        understand Mima's Adventure through their famliarity with the popular side-scrolling platformer genre.
                     </p>
 
                     <p>
-                        The abilities I wanted players to have on-top of the standard run and jump, was a dash ability, a double jump, and the ability to interact with objects like signs or NPCs.
-                    </p>
-                </section>
-
-                <section class = 'projectSection' id = 'development'>
-                    <h3>Development</h3>
-                    <p>
-                        After my initial proposal was approved, I set out to work on the game's foundations. This included the basic movement, enemy AI and things such as platforms. To ensure I didn't spend too much 
-                        on aesthetics, I went with placeholder sprites that were meant to be replaced at a later date. This would allow me to quickly test and ideate other possible mechanics, and scrap them or planned ones
-                        in case it doesn't work out, all while preventing my the heartbreak compared to if I had already made the art for it.
-                    </p>
-
-                    <p>
-                        A bug turned mechanic I implemented was the mechanic on where if you stepped on multiple enemies at the same time, it would actually send you flying. Looking back, I believe the reason why this
-                        happened was due to the enemy classes handling how much momentum Mima gains when they step on them, and so when stepping on multiple, that momentum gain would stack and send Mima flying.
-                        
-                        I honestly saw this as something fun to play with, and so I kept it and made a section in one of the four levels take advantage of this mechanic. Having multiple enemies in a section with a sign
-                        nearby to inform players about it.
+                        For abilities players can use, I planned on expanding upon the standard run-and-jump mechanics by adding a dash ability, a double jump, and the ability to interact with objects like signs or NPCs.
+                        This was to allow for both more freedom in player movement, as well as variety in level design. By allowing players to interact with signs or NPCs, it would allow the game to support light
+                        narrative delivery without interrupting the flow of gameplay since Mima's Adventure isn't a narrative-heavy game.
                     </p>
                 </section>
 
@@ -139,11 +128,56 @@
                     </div>
                 </div>
 
+                <section class = 'projectSection' id = 'development'>
+                    <h3>Development</h3>
+                    <p>
+                        After my initial proposal was approved, I set out to work on the game's foundations. This included the basic movement, enemy AI and things such as platforms. To ensure I didn't spend too much 
+                        on aesthetics, I went with placeholder sprites that were meant to be replaced at a later date. This would allow me to quickly test and ideate other possible mechanics, and scrap them or planned ones
+                        in case it doesn't work out, all while preventing my the heartbreak compared to if I had already made the art for it.
+                    </p>
+
+                    <p>
+                        For Mima, the playable character, I made sure that each action the player could do with them had some sort of visual feedback to reinforce responsiveness and improve the feel of the game.
+                        For example, when dashing, Mima generates afterimages to visually communicate the increased speed and the change in state, and when the afterimages disappear, this will serve as a cue that
+                        the dash has ended.
+                    </p>
+
+                    <p>
+                        A bug turned mechanic I implemented was the mechanic on where if you stepped on multiple enemies at the same time, it would actually send you flying. Looking back, I believe the reason why this
+                        happened was due to the enemy classes handling how much momentum Mima gains when they step on them, and so when stepping on multiple, that momentum gain would stack and send Mima flying.
+                        
+                        I honestly saw this as something fun to play with, and so I kept it and made a section in one of the four levels take advantage of this mechanic. Having multiple enemies in a section with a sign
+                        nearby to inform players about it. This decision reflects an openness to emergent gameplay, where unintended outcomes can create novel player experiences.
+                    </p>
+                </section>
+
+                <div class = 'figureSection'> <!-- Gameplay Image -->
+                    <figure>
+                        <img tabindex = '0' src = 'assets/img/mima/mimaSprites.webp' class = 'zoomImg'
+                        onclick = "openModal('modal7', `A compilation of screenshots showcasing the different sprites for Mima.`)"
+                        alt = "A compilation of screenshots showcasing the different sprites for Mima." loading = 'lazy'
+                        onkeydown = "checkKey('modal7', `A compilation of screenshots showcasing the different sprites for Mima.`, event)"/>
+                        <figcaption>A compilation of screenshots showcasing the different sprites for Mima.</figcaption>
+                    </figure>
+                    <div id = 'modal7' class = 'modal' role = 'dialog' aria-label = "Screenshot of Mima's Adventure during development" aria-modal = 'true'>
+                        <button class="close" onclick = "closeModal('modal7')" aria-label = 'Close modal'>&times;</button>
+                        <img class = "modalImg" src = 'assets/img/mima/mimaSprites.webp' alt = "A compilation of screenshots showcasing the different sprites for Mima.">
+                        <div class="caption"></div>
+                    </div>
+                </div> 
+
                 <section class = 'projectSection' id = 'issues'>
                     <h3>Issues & Solutions</h3>
                     <p>
-                        Given that it was my first time making game, I ended up taking up more time than I expected focusing coding, bug fixing before I could get to both the art and music. So I had to compromise, I made
-                        new art assets for the game, but I had to use older tracks that I composed or covered in my personal time for the soundtrack.
+                        Given that it was my first time developing a game, I underestimated the time required for programming and debugging the game's core features
+                        before I could focus on both the art and music. So I had to compromise, while the polish for both aesthetics and audio was important, it was even
+                        more important that the game's funcionality felt just right, as that is what makes or breaks the player's enjoyment of a game.
+                    </p>
+
+                    <p>
+                        While I managed to create polished sprites for the game, I had to use older tracks that I composed or covered in my personal time for the soundtrack.
+                        Even though I managed to complete the game on time, this part of development showed me the importance of time management and prioritization,
+                        and affirmed how I should prioritize programming in the future, and less time for aesthetics, as long as the game is functional and enjoyable, the aesthetics can be improved later on.
                     </p>
                 </section>
 

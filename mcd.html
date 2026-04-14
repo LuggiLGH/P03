@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Character Development</title>
+    <link href="css/main.css" rel="stylesheet" />
+    <link href = 'css/project.css' rel = 'stylesheet'/>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.webp">
+</head>
+
+    <body>
+        <div class = 'wrapper'>
+        <header>
+            <div class = 'headerImg'>
+                <a href = 'index.html'>
+                    <img src = 'assets/img/logo.svg' alt = "A logo for Joshua Ma's Portfolio."/>
+                </a>
+            </div>
+        </header>
+
+        <nav class = 'headerNav stickyHeader' id = 'headerNav'>       
+            <a href = "#overview">Overview</a>
+            <a href = "#context">Context</a>
+            <a href = "#objective">Objective & Phase One</a>
+            <a href = "#phase2">Phase 2</a>
+            <a href = "#compose">Composing</a>
+            <a href = "#conclusion">Conclusion</a>
+            <button class = 'hamburger' type = 'button' aria-label = 'Open Menu'>
+                <span class = 'bar'></span>
+                <span class = 'bar'></span>
+                <span class = 'bar'></span>
+            </button>
+        </nav>
+        <main>
+
+            <section class = 'projectInfo' style = "background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/img/mcd/truckKun.webp')">
+                <h1>Main Character Development</h1>
+                <h2>ROLES</h2>
+                    <h3>Scriptwriter, Composer</h3>
+            </section>
+
+            <div class = 'projectOverview'>
+                <section class = 'projectSection' id = 'overview'> <!-- Overview / Takeaways -->
+                    <h3>Takeaways</h3>
+                    <ul>
+                        <li>Explored subverting traditional protagonist tropes while still adhering to the hero's journey.</li>
+                        <li>Utilized flowcharts to map out the narrative structure, sound design and art for game development.</li>
+                        <li>Translated a linear story into an interactive structure that engages the player through giving them agency as the main character.</li>
+                    </ul>
+                    <h3>Project Overview</h3>
+                    <p>
+                       Main Character Development is a visual novel following Kouda. They were born to be a main character and yet has tried their hardest to avoid such a lifestyle.
+                       Alas they're forced to enter this it in order to find out what happened to his one and only friend.
+                    </p>
+
+                    <p>
+                        You can play the game on itch.io here: <a href = 'https://main-character-dev.itch.io/main-character-development'>Main Character Development</a>
+                    </p>
+
+                    <p>
+                        Main Character Development was a academic project for Simon Fraser University completed within four months, I worked alongside Trisha, Ben and Jerick.
+                        My responsibilities included as writing the script alongside Trisha in Final Draft, creating the final flowchart alongside Jerick in Figma, as well as composing the music for the game in FL Studio.
+                        In my Narrative and New Media course, I was grouped with others based on the types of stories we were drawn to and discussed ideas we thought of create an interactive piece. We began by writing a script in the context of a film, and later
+                        transitioned the medium to a visual novel game.
+                    </p>
+                </section>
+
+                <div class = 'figureSection'> <!-- Logo -->
+                    <figure>
+                        <img tabindex = '0' src = 'assets/img/mcd/title.webp' class = 'zoomImg'
+                        onclick = "openModal('modal3', 'The main title screen for Main Character Development, featuring art drawn by Trisha Wong.')"
+                        alt = "The main title screen for Main Character Development, featuring art drawn by Trisha Wong."
+                        onkeydown = "checkKey('modal3', 'The main title screen for Main Character Development, featuring art drawn by Trisha Wong.', event)"/>
+                        <figcaption>The main title screen, featuring art drawn by Trisha Wong.</figcaption>
+                    </figure>
+                    <div id = 'modal3' class = 'modal' role = 'dialog' aria-label = "Sketch and finalized version of the title screen for Main Character Development" aria-modal = 'true'>
+                        <button class="close" onclick = "closeModal('modal3')" aria-label = 'Close modal'>&times;</button>
+                        <img class = "modalImg" src = 'assets/img/mcd/title.webp' alt = "The main title screen for Main Character Development, featuring art drawn by Trisha Wong.">
+                        <div class="caption"></div>
+                    </div>
+                </div>
+
+                <section class = 'projectSection' id = 'context'>
+                    <h3>Context</h3>
+                    <p><b>Genre:</b> Adventure, Visual Novel</p>
+                    <p><b>Team Size:</b> 4</p>
+                    <p><b>Platform:</b> PC (Windows & Mac)</p>
+                    <p><b>Development Time:</b> January - April 2023 (4 months)</p>
+                    <p><b>Tools Used:</b> Final Draft (Scriptwriting), Figma (Flowchart), FL Studio (Music), Audacity (Sound Design)</p>
+                </section>
+
+                <section class = 'projectSection' id = 'objective'>
+                    <h3>Objective & Phase One</h3>
+                    <p>
+                        Initially, I was paired with Trisha and we were tasked to create a story in the context of a 30-minute film.
+                        Our project had two phases: first, we brainstormed, ideated, and wrote the script. Next, we took that script and adapted it to a different medium. During the second phase, we decided to adapt the script to fit a visual novel.
+                    </p>
+
+                    <p>
+                        Trisha and I were paired up due to aligning in interests of stories with a focus on character development and anime, at first, we ideated loglines to see what stuck out the most to us, and eventually settled on the idea of a
+                        main character who tries to avoid being a main character. We thought this was an interesting concept to explore as it subverts the typical trope of a protagonist who is destined for greatness,
+                        and instead focuses on a protagonist who is trying to avoid such a lifestyle allowing us to poke fun at tropes for a more light-hearted story.
+                    </p>
+
+                    <p>
+                        At first, we ideated on the characters and flow of the story, going from deciding on 7 to 15 events we want to happen in the story before proceeding to create a general beat sheet for the story.
+                        We originally planned on having three antagonists, but were advised that, in the context of a 30-minute film, it would be difficult to pull off without the story feeling rushed.
+                        To resolve this, we removed one antagonist and turned another into a disguise for the main antagonist,allowing us to still have the same plot points while
+                        also giving us more time to develop the characters and their relationships with one another.
+                    </p>
+                </section>
+
+                <div class = 'figureSection'> <!-- Doc Image -->
+                    <figure>
+                        <img tabindex = '0' src = 'assets/img/mcd/Screenshot_151.webp' class = 'zoomImg'
+                        onclick = "openModal('modal4', `The basic premise for our main character's dilemma.`)"
+                        alt = "The basic premise for our main character's dilemma." loading = 'lazy'
+                        onkeydown = "checkKey('modal4', `The basic premise for our main character's dilemma.`, event)"/>
+                        <figcaption>The basic premise for our main character's dilemma.</figcaption>
+                    </figure>
+                    <div id = 'modal4' class = 'modal' role = 'dialog' aria-label = "The basic premise for our main character's dilemma." aria-modal = 'true'>
+                        <button class="close" onclick = "closeModal('modal4')" aria-label = 'Close modal'>&times;</button>
+                        <img class = "modalImg" src = 'assets/img/mcd/Screenshot_151.webp' alt = "The basic premise for our main character's dilemma.">
+                        <div class="caption"></div>
+                    </div>
+
+                    <figure>
+                        <img tabindex = '0' src = 'assets/img/mcd/antagSlide.webp' class = 'zoomImg'
+                        onclick = "openModal('modal4', `A slide showing the three initially planned antagonists.`)"
+                        alt = "A slide showing the three initially planned antagonists" loading = 'lazy'
+                        onkeydown = "checkKey('modal4', `A slide showing the three initially planned antagonists.`, event)"/>
+                        <figcaption>A slide showing the three initially planned antagonists.</figcaption>
+                    </figure>
+                    <div id = 'modal5' class = 'modal' role = 'dialog' aria-label = "A slide showing the three initially planned antagonists" aria-modal = 'true'>
+                        <button class="close" onclick = "closeModal('modal5')" aria-label = 'Close modal'>&times;</button>
+                        <img class = "modalImg" src = 'assets/img/mcd/antagSlide.webp' alt = "A slide showing the three initially planned antagonists.">
+                        <div class="caption"></div>
+                    </div>
+                </div>
+
+                <section class = 'projectSection' id = 'phase2'>
+                    <h3>Phase Two</h3>
+                    <p>
+                        During this phase Trisha and I were then paired with Ben and Jerick. To adapt our script that's helpful for planning out a visual novel we opted to create a flowchart in Figma.
+                        The flowchart would have details regarding dialogue, choices players can make, when sprites or backgrounds appear and when sounds or music plays.
+                    </p>
+
+                    <p>
+                        We each assigned tasks to each other and made sure to communicate to one another whether or not we thought our workload was fair and played to our strengths.
+                        We settled on Trisha creating the artworks for the character sprites, Jerick would work on the flowchart, gather sounds and also handle the backgrounds,
+                        Ben would handle the coding for the game and I would create the music and assist Jerick with working on the flowchart as well as gathering sound effects.
+                    </p>
+                </section>
+
+                <div class = 'figureSection'>
+                    <figure>
+                        <img tabindex = '0' src = 'assets/img/mcd/figmaFlowchart.webp' class = 'zoomImg'
+                        onclick = "openModal('modal7', `A snippet of the flowchart from Figma created by me, Trisha Wong, Benjamin Djukastein and Jerick Erice.`)"
+                        alt = "A snippet of the flowchart from Figma created by me, Trisha Wong, Benjamin Djukastein and Jerick Erice." loading = 'lazy'
+                        onkeydown = "checkKey('modal7', `A snippet of the flowchart from Figma created by me, Trisha Wong, Benjamin Djukastein and Jerick Erice.`, event)"/>
+                        <figcaption>A snippet of the flowchart from Figma created by me, Trisha Wong, Benjamin Djukastein and Jerick Erice.</figcaption>
+                    </figure>
+                    <div id = 'modal7' class = 'modal' role = 'dialog' aria-label = "A snippet of the flowchart from Figma created by me, Trisha Wong, Benjamin Djukastein and Jerick Erice." aria-modal = 'true'>
+                        <button class="close" onclick = "closeModal('modal7')" aria-label = 'Close modal'>&times;</button>
+                        <img class = "modalImg" src = 'assets/img/mcd/figmaFlowchart.webp' alt = "A snippet of the flowchart from Figma created by me, Trisha Wong, Benjamin Djukastein and Jerick Erice.">
+                        <div class="caption"></div>
+                    </div>
+                </div> 
+
+                <section class = 'projectSection' id = 'compose'>
+                    <h3>Composing</h3>
+                    <p>
+                        Our main issue was the amount of time we had compared to the amount of work we had considering we all had additional classes to do on top of this project.
+                        For the music, we all read over the first act of the story to figure out what kind of tracks I'll need to compose for the game and we figured that we needed a Happy track, a suspenseful track and a sad track.
+                        I also tried composing character tracks, but unfortuantely didn't pace myself well enough to make one for all of the characters. 
+                        For these tracks I grabbed reference tracks to get an idea of what kind of track he should create. For example, for a delinquent character's theme,
+                        the main inspiration for the track was <a href = 'https://www.youtube.com/watch?v=N2ZMhkhNfcw'>Jun</a> created by Takuro Yoshida, using it as a reference I created the theme for the delinquent character, Onizuka.
+                    </p>
+
+                    <p>
+                        The resemblance to the reference track should be apparent but, I hope it manages to achieve a similar feeling while also being its own track. I utilized a similar process for the other tracks as well,
+                        using reference tracks to get an idea of the mood and instrumentation I should use for each track.
+                    </p>
+                </section>
+
+                <div class = 'figureSection'>
+                    <figure>
+                        <iframe src = 'https://www.youtube.com/embed/IEJQyxwHpqk'>
+
+                        </iframe>
+                        <figcaption>Onizuka's theme.</figcaption>
+                    </figure>
+                    <figure>
+                        <iframe src = 'https://www.youtube.com/embed/JYb0rjbuyac'>
+
+                        </iframe>
+                        <figcaption>The song that plays when the mood should be sad.</figcaption>
+                    </figure>
+                </div>
+
+                <section class = 'projectSection' id = 'conclusion'>
+                    <h3>Conclusion</h3>
+                    <p>
+                        Main Character Development was well received by our professor, and was even featured on the SFU Showcase for Spring 2023.
+                        My contributions to the project with the music and story to the game helped it achieve the feeling we wanted during certain scenes
+                        as well as creating believable characters with a sympathetic goal and development (hehe).
+                    </p>
+
+                    <p>
+                        From my experience working on the project I learned the importance of pacing myself as there were more tracks I wanted to create for the game.
+                        Being strict with myself through creating a schedule to follow will be a step in the right direction. I also learned the usefulness of utilizing Figma
+                        to write out the flow of the game, as it allowed me to make it easy for the programmer to know when certain sounds, expressions, backgrounds or songs should
+                        play without needing to ask me and also made it easy for me to keep track of what I needed to do as well.
+                    </p>
+                </section>
+
+                <div class = 'figureSection'>
+                    <figure>
+                        <iframe src = 'https://www.youtube.com/embed/FpuRSHZmYas'>
+
+                        </iframe>
+                        <figcaption>The song that plays when the mood should be sad.</figcaption>
+                    </figure>
+                    <figure>
+                        <iframe src = 'https://www.youtube.com/embed/vpUkmsuHUeI'>
+
+                        </iframe>
+                        <figcaption>The song that plays to put the player in suspense.</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </main>
+
+        <div class = 'bgContainer' aria-hidden = 'true'>
+            <div class = 'scrollBGLEFT'></div>
+            <div class = 'scrollBGRIGHT'></div>
+        </div>
+
+        <script src = 'js/script.js'></script>
+
+        <footer>
+            <div class = 'navFooter'>
+                <div class = 'footerSection'>
+                    <h4>Contact & About</h4>
+                    <a href="./about.html">About Me</a>
+                    <a href="./about.html#contact">Contact</a>
+                </div>
+
+                <div class = 'footerSection'>
+                    <h4>Other Links</h4>
+                    <a href = './StyleGuide.html'>Style Guide</a>
+                    <a href = './StyleGuide.html#citation'>Citations</a>
+                    <a href = 'https://github.com/LuggiLGH/P03'>GitHub Repository</a>
+                    <a href = 'https://joshua-luggi.webflow.io/'>Original Portfolio</a>
+                </div>
+            </div>
+        </footer>
+        </div>
+    </body>
+</html>
