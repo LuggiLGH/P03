@@ -90,7 +90,7 @@
     padding: 5rem;
 }
 
-.gameCover, .character, .track, .threeDee {
+.gameCover, .character, .track, .threeDee, .illustration {
     background-color: #22212e;
     padding: 1rem;
 }
@@ -163,7 +163,7 @@
     display: block;
 }
 
-.character, .threeDee {
+.character, .threeDee, .illustration {
     width: 100vw;
     max-width: 20vw;
 }

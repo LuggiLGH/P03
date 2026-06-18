@@ -139,6 +139,10 @@
             Character Designs
           </button>
 
+          <button type = 'button' class = 'button' onclick = "filterGallery('illustration')" onkeydown = "galleryCheckKey(this, 'illustration', event)">
+            Illustrations
+          </button>
+
           <button type = 'button' class = 'button' onclick = "filterGallery('threeDee')" onkeydown = "galleryCheckKey(this, 'threeDee', event)">
             3D Modeling
           </button>
@@ -292,6 +296,48 @@
             <div>
               <h4>Type of Work</h4>
               <p>Academic (2026)</p>
+            </div>
+          </article>
+
+          <article class = 'content illustration'> <!-- mix of modal image and caption-->
+            <h3>Hones (OCBL)</h3>
+            
+            <figure>
+              <img tabindex = '0' src = 'assets/img/characters/honesVS.webp' loading = 'lazy' class = 'zoomImg' alt = "Hones, adapted for OCBallLab's art style." onclick = "openModal('modal8', 'Hones, adapted for OCBallLabs art style.')" 
+              onkeydown = 'checkKey("modal8", "Hones, adapted for OCBallLabs art style.", event)'/>
+              <figcaption>Hones, adapted for OCBallLab's art style.</figcaption>
+            </figure>
+
+            <div id = 'modal8' class = 'modal' role = 'dialog' aria-label = 'Hones, adapted for OCBallLab's art style.' aria-modal = 'true'>
+              <button class="close" onclick = "closeModal('modal8')" aria-label = "Close modal">&times;</button>
+              <img class = "modalImg" id = 'ocblHones' src = 'assets/img/characters/honesVS.webp' alt = 'Hones, adapted for OCBallLabs art style.'>
+              <div class="caption"></div>
+            </div>
+
+            <div>
+              <h4>Type of Work</h4>
+              <p>Personal (2026)</p>
+            </div>
+          </article>
+
+          <article class = 'content illustration'> <!-- mix of modal image and caption-->
+            <h3>Sari (OCBL)</h3>
+            
+            <figure>
+              <img tabindex = '0' src = 'assets/img/characters/sariVS.webp' loading = 'lazy' class = 'zoomImg' alt = "Sari, adapted for OCBallLab's art style." onclick = "openModal('modal8', 'Sari, adapted for OCBallLabs art style.')" 
+              onkeydown = 'checkKey("modal8", "Sari, adapted for OCBallLabs art style.", event)'/>
+              <figcaption>Sari, adapted for OCBallLab's art style.</figcaption>
+            </figure>
+
+            <div id = 'modal8' class = 'modal' role = 'dialog' aria-label = 'Sari, adapted for OCBallLab's art style.' aria-modal = 'true'>
+              <button class="close" onclick = "closeModal('modal8')" aria-label = "Close modal">&times;</button>
+              <img class = "modalImg" id = 'ocblSari' src = 'assets/img/characters/sariVS.webp' alt = 'Sari, adapted for OCBallLabs art style.'>
+              <div class="caption"></div>
+            </div>
+
+            <div>
+              <h4>Type of Work</h4>
+              <p>Personal (2026)</p>
             </div>
           </article>
 
