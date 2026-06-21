@@ -168,6 +168,19 @@
     max-width: 20vw;
 }
 
+.gallery .content {
+    min-width: 0;
+}
+
+.gallery .zoomImg {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 60vh;
+    object-fit: contain;
+}
+
 .gallery h3 {
     font-weight: 600;
     font-size: 20px;
