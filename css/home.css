@@ -242,7 +242,7 @@
         max-width: 100%;
     }
 
-    .character {
+    .character, .threeDee, .illustration {
         width: 100vw;
         max-width: 100%;
         text-align: center;

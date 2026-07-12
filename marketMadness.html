@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Night Market Madness</title>
     <link href="css/main.css" rel="stylesheet" />
+    <link href="css/home.css" rel="stylesheet" />
     <link href = 'css/project.css' rel = 'stylesheet'/>
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.webp">
 </head>
@@ -26,6 +27,7 @@
             <a href = "#development">Development</a>
             <a href = "#coding">Coding</a>
             <a href = "#conclusion">Conclusion</a>
+            <a href = "#gallery">Gallery</a>
             <button class = 'hamburger' type = 'button' aria-label = 'Open Menu'>
                 <span class = 'bar'></span>
                 <span class = 'bar'></span>
@@ -217,6 +219,86 @@
                     </p>
                 </section>
             </div>
+        
+        <!-- GALLERY -->
+        <section id = 'art' class = 'homeSection'>
+        <h2 id = 'gallery' style = "color: #92e4a4; font-weight: 600; font-style: italic; font-size: 24px">Gallery</h2>
+        <div class = 'gallery'>
+            <article class = 'threeDee'>
+                <figure>
+                    <img tabindex = '0' src = 'assets/img/nmm/Screenshot_107.webp' class = 'zoomImg'
+                    onclick = "openModal('modal9', `Reference sheets drawn for the various shop keepers.`)"
+                    alt = "Reference sheets drawn for the various shop keepers." loading = 'lazy'
+                    onkeydown = "checkKey('modal9', `Reference sheets drawn for the various shop keepers.`, event)"/>
+                    <figcaption>Reference sheets drawn for the various shop keepers.</figcaption>
+                </figure>
+                <div id = 'modal9' class = 'modal' role = 'dialog' aria-label = "Reference sheets drawn for the various shop keepers." aria-modal = 'true'>
+                    <button class="close" onclick = "closeModal('modal9')" aria-label = 'Close modal'>&times;</button>
+                    <img class = "modalImg" src = 'assets/img/nmm/Screenshot_107.webp' alt = "Reference sheets drawn for the various shop keepers.">
+                    <div class="caption"></div>
+                </div>
+            </article>
+
+            <article class = 'threeDee'>
+                <figure>
+                    <img tabindex = '0' src = 'assets/img/nmm/Screenshot_164.webp' class = 'zoomImg'
+                    onclick = "openModal('modal10', `The model made for the bunny vendor.`)"
+                    alt = "The model made for the bunny vendor." loading = 'lazy'
+                    onkeydown = "checkKey('modal10', `The model made for the bunny vendor.`, event)"/>
+                    <figcaption>The model made for the bunny vendor.</figcaption>
+                </figure>
+                <div id = 'modal10' class = 'modal' role = 'dialog' aria-label = "The model made for the bunny vendor." aria-modal = 'true'>
+                    <button class="close" onclick = "closeModal('modal10')" aria-label = 'Close modal'>&times;</button>
+                    <img class = "modalImg" src = 'assets/img/nmm/Screenshot_164.webp' alt = "The model made for the bunny vendor.">
+                    <div class="caption"></div>
+                </div>
+            </article>
+
+                        <article class = 'threeDee'>
+                <figure>
+                    <img tabindex = '0' src = 'assets/img/nmm/Screenshot_165.webp' class = 'zoomImg'
+                    onclick = "openModal('modal11', `The model made for the fox vendor.`)"
+                    alt = "The model made for the fox vendor." loading = 'lazy'
+                    onkeydown = "checkKey('modal11', `The model made for the fox vendor.`, event)"/>
+                    <figcaption>The model made for the fox vendor.</figcaption>
+                </figure>
+                <div id = 'modal11' class = 'modal' role = 'dialog' aria-label = "The model made for the fox vendor." aria-modal = 'true'>
+                    <button class="close" onclick = "closeModal('modal11')" aria-label = 'Close modal'>&times;</button>
+                    <img class = "modalImg" src = 'assets/img/nmm/Screenshot_165.webp' alt = "The model made for the fox vendor.">
+                    <div class="caption"></div>
+                </div>
+            </article>
+
+            <article class = 'threeDee'>
+                <figure>
+                    <img tabindex = '0' src = 'assets/img/nmm/Screenshot_166.webp' class = 'zoomImg'
+                    onclick = "openModal('modal12', `The model made for the octopus vendor.`)"
+                    alt = "The model made for the octopus vendor." loading = 'lazy'
+                    onkeydown = "checkKey('modal12', `The model made for the octopus vendor.`, event)"/>
+                    <figcaption>The model made for the octopus vendor.</figcaption>
+                </figure>
+                <div id = 'modal12' class = 'modal' role = 'dialog' aria-label = "The model made for the octopus vendor." aria-modal = 'true'>
+                    <button class="close" onclick = "closeModal('modal12')" aria-label = 'Close modal'>&times;</button>
+                    <img class = "modalImg" src = 'assets/img/nmm/Screenshot_166.webp' alt = "The model made for the octopus vendor.">
+                    <div class="caption"></div>
+                </div>
+            </article>
+
+            <article class = 'threeDee'>
+                <figure>
+                    <img tabindex = '0' src = 'assets/img/nmm/variousModels.webp' class = 'zoomImg'
+                    onclick = "openModal('modal13', `Various NPC models in engine (Unity).`)"
+                    alt = "Various NPC models in engine (Unity)." loading = 'lazy'
+                    onkeydown = "checkKey('modal13', `Various NPC models in engine (Unity).`, event)"/>
+                    <figcaption>Various NPC models in engine (Unity).</figcaption>
+                </figure>
+                <div id = 'modal13' class = 'modal' role = 'dialog' aria-label = "Various NPC models in engine (Unity)." aria-modal = 'true'>
+                    <button class="close" onclick = "closeModal('modal13')" aria-label = 'Close modal'>&times;</button>
+                    <img class = "modalImg" src = 'assets/img/nmm/variousModels.webp' alt = "Various NPC models in engine (Unity).">
+                    <div class="caption"></div>
+                </div>
+            </article>
+        </section>
         </main>
 
         <div class = 'bgContainer' aria-hidden = 'true'>
