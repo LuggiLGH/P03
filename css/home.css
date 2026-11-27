@@ -135,7 +135,7 @@
     padding: 0;
 }
 
-.gameCover h3 {
+.gameCover h3, .gameh3 {
     font-weight: 600;
     font-size: 20px;
     color: #92e4a4;
@@ -220,7 +220,7 @@
     display: none;
 }
 
-.otherProjectContent h3 {
+.otherProjectContent h3:not(.gameh3) {
     font-weight: 400;
     font-size: 24px;
     color: #92e4a4;
