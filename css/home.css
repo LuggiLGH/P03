@@ -119,6 +119,7 @@
 /* GAMES */
 
 .gameSection {
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -149,6 +150,7 @@
 }
 
 .gallery {
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
@@ -157,6 +159,7 @@
 /* Hide gallery entries by default; JS adds .show to matching items */
 .content {
     display: none;
+    border-radius: 10px;
 }
 
 .content.show {
@@ -187,27 +190,68 @@
     color: #92e4a4;
 }
 
+.pieceInfo {
+    padding: 1rem;
+    background-color: #2c2a42;
+    border-radius: 20px;
+}
+
+.track .pieceInfo {
+    margin-bottom: 2rem;
+}
+
+/* collapsible section */
+.otherProject {
+    width: 100%;
+}
+
+.otherProjectContent {
+    height: 0;
+    overflow: hidden;
+    background-color: #22212e;
+    transition: height 0.3s ease;
+}
+
+.otherProjectContentInner {
+    padding: 3rem;
+}
+
+.otherProjectContent[hidden] {
+    display: none;
+}
+
+.otherProjectContent h3 {
+    font-weight: 400;
+    font-size: 24px;
+    color: #92e4a4;
+    margin-left: 10%;
+}
+
+.otherProjectContent .gameCover {
+    background-color: #2c2a42;
+    border-radius: 10px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .otherProjectContent {
+        transition: none;
+    }
+}
+
 /* MUSIC */
 
 .track {
     max-width: 20vw;
+    border-radius: 10px;
 }
 
 .track audio {
     width: 100%;
     color-scheme: dark;
 }
-
-.track h3 {
+.pieceInfo h4 {
     margin: 1rem;
-}
-
-.track h4 {
-    margin: 1rem;
-}
-
-.track p {
-    margin: 1rem;
+    margin-top: 0;
 }
 
 /* RESPONSIVENESS */

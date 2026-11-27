@@ -45,6 +45,38 @@
     font-weight: 600;
 }
 
+.contextSection p {
+    padding-bottom: 0.2rem;
+}
+
+.contributionSection {
+    width: 200%;
+    display: flex;
+}
+
+.contributionSection {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.contribution {
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #0f0e18;
+}
+
+.contribution h4 {
+    margin-top: 0.5rem;
+}
+
+.contributionVid {
+    object-fit: cover;
+    max-width: 100%;
+    width: 200%;
+    height: auto;
+}
+
 ul {
     line-height: 28px;
     margin-bottom: 2rem;
@@ -55,4 +87,27 @@ ul {
     max-width: 50vw;
     height: auto;
     aspect-ratio: 16 / 9;
+}
+
+@media screen and (max-width: 1264px) {
+    .contributionSection {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 1124px) {
+    .contributionSection {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
+
+@media screen and (max-width: 724px) {
+    .contribution {
+        margin: 0.5rem;
+    }
+
+    figure {
+        margin: 0.5rem;
+    }
 }

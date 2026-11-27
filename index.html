@@ -14,7 +14,7 @@
     <header>
         <div class = 'headerImg'>
           <a href = 'index.html'>
-            <img src = 'assets/img/logo.svg' alt = "A logo for Joshua Ma's Portfolio."/>
+            <img class = "logo" src = 'assets/img/logo.svg' alt = "A logo for Joshua Ma's Portfolio."/>
           </a>
         </div>
     </header>
@@ -66,52 +66,15 @@
       </section>
 
       <section id = 'game' class = 'homeSection' aria-labelledby = 'game-projects'> <!-- basically boxes next to each other -->
-        <h2 id = 'game-projects'>Projects</h2>
-
+        <h2 id = 'game-projects'>Game Projects</h2>
         <div class = 'gameSection'>
           <article class = 'gameCover'>
-            <a href = 'mima.html'>
-              <img src = 'assets/img/home/homeMima.webp' srcset = 'assets/img/home/homeMima_1x.webp 1x, assets/img/home/homeMima_2x.webp 2x, assets/img/home/homeMima_3x.webp 3x, assets/img/home/homeMima_4x.webp 4x' class = 'zoomImg' alt = 'A game cover image for Mimas Adventure, a 2D sidescroller made for an SFU course.'/>
+            <a href = 'ocbl.html'>
+              <img src = 'assets/img/home/homeOCBL.webp' class = 'zoomImg' alt = 'A game cover image for OCBallLab, a physics-based simulation game.'/>
             </a>
-            <h3>Mima's Adventure</h3>
-            <h4>Game Designer (2021)</h4>
-            <p>A 2D side-scroller, you play as a riceball named Mima to get back your fries!</p>
-          </article>
-
-          <article class = 'gameCover'>
-            <a href = 'ajax.html'>
-              <img src = 'assets/img/home/homeAJAX.webp' class = 'zoomImg' alt = 'A game cover image for Main Character Development, a visual novel made for a senior-level SFU course.'/>
-            </a>
-            <h3>AJAX</h3>
-            <h4>Artist (2022)</h4>
-            <p>A short 2D side-scroller game, you play as a robot designated as E-TBTP, sent to investigate a source of corruption on a planet.</p>
-          </article>
-
-          <article class = 'gameCover'>
-            <a href = 'mcd.html'>
-              <img src = 'assets/img/home/homeMCD.webp' class = 'zoomImg' alt = 'A game cover image for Main Character Development, a visual novel made for a senior-level SFU course.'/>
-            </a>
-            <h3>Main Character Development</h3>
-            <h4>Writer (2023)</h4>
-            <p>A visual novel set in a world full of fantastical tropes, where a friend’s disappearance pulls a reluctant protagonist into that world to uncover the truth.</p>
-          </article>
-
-          <article class = 'gameCover'>
-            <a href = 'dungeonManager.html'>
-              <img src = 'assets/img/home/homeDM.webp' class = 'zoomImg' alt = 'A game cover image for Main Character Development, a visual novel made for a senior-level SFU course.'/>
-            </a>
-            <h3>Dungeon Manager</h3>
-            <h4>Game Designer (2023)</h4>
-            <p>In this turn-based board game, compete with other dungeon masters and prove that your dungeon is the best in the land!</p>
-          </article>
-
-          <article class = 'gameCover'>
-            <a href = 'marketMadness.html'>
-              <img src = 'assets/img/home/homeNMM.webp' class = 'zoomImg' alt = 'A game cover image for Night Market Madness, a visual novel made for a senior-level SFU course.'/>
-            </a>
-            <h3>Night Market Madness</h3>
-            <h4>Modeler (2024)</h4>
-            <p>A VR-experience where you have to quickly gather ingredients for your grandma!</p>
+            <h3>OCBallLab</h3>
+            <h4>Programmer (2026)</h4>
+            <p>A physics-based simulation battles between characters made by various people!</p>
           </article>
 
           <article class = 'gameCover'>
@@ -122,7 +85,65 @@
             <h4>Writer (2025)</h4>
             <p>A top-down murder mystery game where you play as the murderer, a hitman!</p>
           </article>
+
+          <article class = 'gameCover'>
+            <a href = 'mcd.html'>
+              <img src = 'assets/img/home/homeMCD.webp' class = 'zoomImg' alt = 'A game cover image for Main Character Development, a visual novel made for a senior-level SFU course.'/>
+            </a>
+            <h3>Main Character Development</h3>
+            <h4>Writer (2023)</h4>
+            <p>A visual novel set in a world full of fantastical tropes, where a friend’s disappearance pulls a reluctant protagonist into that world to uncover the truth.</p>
+          </article>
         </div>
+
+        <section aria-label="Other Projects">
+          <h3>Intersted in more?</h3>
+          <button type = "button" class = "button otherProject" aria-expanded = "false" aria-controls = "other-project-content">Click here to view both older game projects and other creative works.</button>
+          <div id = "other-project-content" class = "otherProjectContent" aria-hidden = "true" hidden>
+            <div class = "otherProjectContentInner">
+            <h3>Game Projects</h3>
+            <div class = 'gameSection'>
+              <article class = 'gameCover'>
+                <a href = 'marketMadness.html'>
+                  <img src = 'assets/img/home/homeNMM.webp' class = 'zoomImg' alt = 'A game cover image for Night Market Madness, a visual novel made for a senior-level SFU course.'/>
+                </a>
+                <h3>Night Market Madness</h3>
+                <h4>Modeler (2024)</h4>
+                <p>A VR-experience where you have to quickly gather ingredients for your grandma!</p>
+              </article>
+
+              <article class = 'gameCover'>
+                <a href = 'dungeonManager.html'>
+                  <img src = 'assets/img/home/homeDM.webp' class = 'zoomImg' alt = 'A game cover image for Main Character Development, a visual novel made for a senior-level SFU course.'/>
+                </a>
+                <h3>Dungeon Manager</h3>
+                <h4>Game Designer (2023)</h4>
+                <p>In this turn-based board game, compete with other dungeon masters and prove that your dungeon is the best in the land!</p>
+              </article>
+
+              <article class = 'gameCover'>
+                <a href = 'ajax.html'>
+                  <img src = 'assets/img/home/homeAJAX.webp' class = 'zoomImg' alt = 'A game cover image for Main Character Development, a visual novel made for a senior-level SFU course.'/>
+                </a>
+                <h3>AJAX</h3>
+                <h4>Artist (2022)</h4>
+                <p>A short 2D side-scroller game, you play as a robot designated as E-TBTP, sent to investigate a source of corruption on a planet.</p>
+              </article>
+              
+              <article class = 'gameCover'>
+                <a href = 'mima.html'>
+                  <img src = 'assets/img/home/homeMima.webp' srcset = 'assets/img/home/homeMima_1x.webp 1x, assets/img/home/homeMima_2x.webp 2x, assets/img/home/homeMima_3x.webp 3x, assets/img/home/homeMima_4x.webp 4x' class = 'zoomImg' alt = 'A game cover image for Mimas Adventure, a 2D sidescroller made for an SFU course.'/>
+                </a>
+                <h3>Mima's Adventure</h3>
+                <h4>Game Designer (2021)</h4>
+                <p>A 2D side-scroller, you play as a riceball named Mima to get back your fries!</p>
+              </article>
+            </div>
+
+            <h3>Web Projects</h3>
+            </div>
+          </div>
+        </section>
       </section>
 
       <section id = 'art' class = 'homeSection' aria-labelledby = 'gallery'> <!-- gallery -->
@@ -166,9 +187,10 @@
               <div class="caption"></div>
             </div>
 
-            <div>
-              <h4>Type of Work</h4>
-              <p>Personal (2025)</p>
+            <div class = "pieceInfo">
+              <h4>Type of Work | Personal (2025)</h4>
+              <hr>
+              <p>A reference sheet for Hones, a skeleton caster/assassin.</p>
             </div>
           </article>
 
@@ -187,9 +209,31 @@
               <div class="caption"></div>
             </div>
 
-            <div>
-              <h4>Type of Work</h4>
-              <p>Academic (2026)</p>
+            <div class = "pieceInfo">
+              <h4>Type of Work | Academic (2026)</h4>
+              <hr>
+              <p>A turnaround of Leornah, alongside references for her gear and expressions. Created as a final project for a character design course.</p>
+            </div>
+          </article>
+          
+          <article class = "content character">
+            <h3>Karnec</h3>
+            <figure>
+              <img tabindex = "0" src = 'assets/img/characters/karnec.png' loading = 'lazy' class = 'zoomImg' alt = 'A reference sheet for Karnec, a human archer with a cursed arm.' onclick = "openModal('modal18', 'A reference sheet for Karnec, a human warrior.')"
+              onkeydown = 'checkKey("modal18", "A reference sheet for Karnec, a human warrior.", event)'/>
+              <figcaption>A reference sheet for Karnec, a human archer with a cursed arm.</figcaption>
+            </figure>
+
+            <div id = 'modal18' class = 'modal' role = 'dialog' aria-label = 'Karnec artwork dialogue' aria-modal = 'true'>
+              <button class="close" onclick = "closeModal('modal18')" aria-label = "Close modal">&times;</button>
+              <img class = "modalImg" id = 'karnec' src = 'assets/img/characters/karnec.png' alt = 'A reference sheet for Karnec, a human archer with a cursed arm.'>
+              <div class="caption"></div>
+            </div>
+
+            <div class = "pieceInfo">
+              <h4>Type of Work | Personal (2026)</h4>
+              <hr>
+              <p>A reference sheet for Karnec, a human archer with a cursed arm. He is Leornah's younger brother.</p>
             </div>
           </article>
 
@@ -208,9 +252,10 @@
               <div class="caption"></div>
             </div>
 
-            <div>
-              <h4>Type of Work</h4>
-              <p>Commission (2025)</p>
+            <div class = "pieceInfo">
+              <h4>Type of Work | Commission (2025)</h4>
+              <hr>
+              <p>Commissioned image of adapting a Brickadia punk skeleton avatar.</p>
             </div>
           </article>
 
@@ -230,9 +275,10 @@
               <div class="caption"></div>
             </div>
 
-            <div>
-              <h4>Type of Work</h4>
-              <p>Commission (2025)</p>
+            <div class = "pieceInfo">
+              <h4>Type of Work | Commission (2025)</h4>
+              <hr>
+              <p>Commissioned design for a cybernetic scientist named Tomoe.</p>
             </div>
           </article>
 
@@ -251,9 +297,10 @@
               <div class="caption"></div>
             </div>
 
-            <div>
-              <h4>Type of Work</h4>
-              <p>Personal (2025)</p>
+            <div class = "pieceInfo">
+              <h4>Type of Work | Personal (2025)</h4>
+              <hr>
+              <p>Character design for Sari, a humanoid aquarian with a curse. Originally designed for a Minecraft SMP.</p>
             </div>
           </article>
 
@@ -272,9 +319,10 @@
               <div class="caption"></div>
             </div>
 
-            <div>
-              <h4>Type of Work</h4>
-              <p>Academic (2026)</p>
+            <div class = "pieceInfo">
+              <h4>Type of Work | Academic (2026)</h4>
+              <hr>
+              <p>A character design created after studying the art style and character design of the game, Horrorvale.</p>
             </div>
           </article>
         
@@ -293,9 +341,10 @@
               <div class="caption"></div>
             </div>
 
-            <div>
-              <h4>Type of Work</h4>
-              <p>Academic (2026)</p>
+            <div class = "pieceInfo">
+              <h4>Type of Work | Academic (2026)</h4>
+              <hr>
+              <p>A medic reploid design, inspired by the art style and character design of the Megaman X series.</p>
             </div>
           </article>
 
@@ -314,9 +363,10 @@
               <div class="caption"></div>
             </div>
 
-            <div>
-              <h4>Type of Work</h4>
-              <p>Personal (2026)</p>
+            <div class = "pieceInfo">
+              <h4>Type of Work | Personal (2026)</h4>
+              <hr>
+              <p>Splash art for my character, Hones. Drawn in Clip Studio Paint, made for OCBallLab.</p>
             </div>
           </article>
 
@@ -335,9 +385,10 @@
               <div class="caption"></div>
             </div>
 
-            <div>
-              <h4>Type of Work</h4>
-              <p>Personal (2026)</p>
+            <div class = "pieceInfo">
+              <h4>Type of Work | Personal (2026)</h4>
+              <hr>
+              <p>Splash art of my character, Sari. Drawn in Clip Studio Paint, made for as a custom character for OCBallLab.</p>
             </div>
           </article>
 
@@ -356,9 +407,11 @@
               <div class="caption"></div>
             </div>
 
-            <div>
-              <h4>Type of Work</h4>
-              <p>Personal (2026)</p>
+
+            <div class = "pieceInfo">
+              <h4>Type of Work | Personal (2026)</h4>
+              <hr>
+              <p>Created a nighttime city rooftop background for a personal project.</p>
             </div>
           </article>
 
@@ -376,9 +429,10 @@
               <img class = "modalImg" id = 'blMeenoHones' src = 'assets/img/3D/blMeenoHones.webp' srcset = 'assets/img/3D/blMeenoHones_1x.webp 1x, assets/img/3D/blMeenoHones_2x.webp 2x, assets/img/3D/blMeenoHones_3x.webp 3x, assets/img/3D/blMeenoHones_4x.webp 4x' alt = '3D models of Meeno and Hones, made in the style of Blockland.'>
               <div class="caption"></div>
             </div>
-            <div>
-              <h4>Type of Work</h4>
-              <p>Personal (2023)</p>
+            <div class = "pieceInfo">
+              <h4>Type of Work | Personal (2023)</h4>
+              <hr>
+              <p>Modified the player model from Blockland in Blender to make them look my character, Hones, and a co-owned character, Meeno.</p>
             </div>
           </article>
 
@@ -396,9 +450,10 @@
               <img class = "modalImg" id = 'mimaRender' src = 'assets/img/3D/mimaRender.webp' alt = '3D render of Mima, created in Maya.'>
               <div class="caption"></div>
             </div>
-            <div>
-              <h4>Type of Work</h4>
-              <p>Academic (2022)</p>
+            <div class = "pieceInfo">
+              <h4>Type of Work | Academic (2022)</h4>
+              <hr>
+              <p>Created a 3D model of my character, Mima, in Maya for a 3D course.</p>
             </div>
           </article>
 
@@ -416,9 +471,10 @@
               <img class = "modalImg" id = 'mayaSkull' src = 'assets/img/3D/mayaSkull.webp' alt = 'A stylized 3D skull, modelled in Maya.'>
               <div class="caption"></div>
             </div>
-            <div>
-              <h4>Type of Work</h4>
-              <p>Academic (2022)</p>
+            <div class = "pieceInfo">
+              <h4>Type of Work | Academic (2022)</h4>
+              <hr>
+              <p>Created a 3D model of a skull in Maya for a 3D course.</p>
             </div>
           </article>
 
@@ -449,9 +505,10 @@
               <img class = "modalImg" id = 'ref1Finish' src = 'assets/img/3D/ref1Finish.avif' alt = 'Drawn environemnt using the model as a reference.'>
               <div class="caption"></div>
             </div>
-            <div>
-              <h4>Type of Work</h4>
-              <p>Indie (2023)</p>
+            <div class = "pieceInfo">
+              <h4>Type of Work | Indie (2023)</h4>
+              <hr>
+              <p>Created a model in Blender to use as a reference and drawn over in Adobe Animate.</p>
             </div>
           </article>
 
@@ -482,9 +539,10 @@
               <img class = "modalImg" id = 'ref1Finish' src = 'assets/img/3D/ref2Finish.webp' alt = 'Drawn environemnt using the model as a reference.'>
               <div class="caption"></div>
             </div>
-            <div>
-              <h4>Type of Work</h4>
-              <p>Indie (2023)</p>
+            <div class = "pieceInfo">
+              <h4>Type of Work | Indie (2023)</h4>
+              <hr>
+              <p>Created a model in Blender to use as a reference and drawn over in Adobe Animate.</p>
             </div>
           </article>
 
@@ -503,9 +561,11 @@
               <div class="caption"></div>
             </div>
 
-            <div>
-              <h4>Type of Work</h4>
-              <p>Personal (2026)</p>
+
+            <div class = "pieceInfo">
+              <h4>Type of Work | Personal (2026)</h4>
+              <hr>
+              <p>Created as a splash screen for a friend's project related to OCBallLab</p>
             </div>
           </article>
 
@@ -524,16 +584,17 @@
               <div class="caption"></div>
             </div>
 
-            <div>
-              <h4>Type of Work</h4>
-              <p>Personal (2026)</p>
+            <div class = "pieceInfo">
+              <h4>Type of Work | Personal (2026)</h4>
+              <hr>
+              <p>Created for Hones in OCBallLab</p>
             </div>
           </article>
 
           <article class = 'content illustration'> <!-- mix of modal image and caption-->
             <h3>Frost Hydra</h3>
             
-            <figure>
+            <figure class>
               <img tabindex = '0' src = 'assets/img/characters/hydra.gif' loading = 'lazy' class = 'zoomImg' alt = "Frost Hydra, one of Hones spells." onclick = "openModal('modal20', 'Frost Hydra, one of Hones spells.')" 
               onkeydown = 'checkKey("modal20", "Frost Hydra, one of Hones spells.", event)'/>
               <figcaption>Frost Hydra, one of Hones' spells.</figcaption>
@@ -545,9 +606,10 @@
               <div class="caption"></div>
             </div>
 
-            <div>
-              <h4>Type of Work</h4>
-              <p>Personal (2026)</p>
+            <div class = "pieceInfo">
+              <h4>Type of Work | Personal (2026)</h4>
+              <hr>
+              <p>Created for Hones' summer skin in OCBallLab</p>
             </div>
           </article>
 
@@ -555,20 +617,20 @@
       </section>
 
         <section id = 'music' class = 'homeSection' aria-labelledby = 'musicTracks'> <!-- sample of work and link to spotify/soundcloud-->
-          <h2 id = 'musicTracks'>Samples</h2>
+          <h2 id = 'musicTracks'>Music Samples</h2>
           
           <div class = 'gallery'>
 
             <article class = 'track'>
-              <h3>Day Job (2026)</h3>
+              <h3>Day Job</h3>
               <audio controls>
                 <source src = 'assets/audio/hardtale.ogg' type = 'audio/ogg'/>
                 Your browser does not support the audio element.
               </audio>
               <div>
-                <div>
-                <h4>Type of Work</h4>
-                <p>Commission</p>
+                <div class = "pieceInfo">
+                <h4>Type of Work | Commission (2026)</h4>
+                <hr>
                 <p>Composed for the ROBLOX game <a href = 'https://www.roblox.com/games/8704891814/Undertale-Last-Corridor-LITE'>Undertale: ASHES.</a> Gone over by <a href = 'https://x.com/luunaxis'>Lunaxis</a>.</p>
                 </div>
                 <div>
@@ -578,15 +640,15 @@
             </article>
 
             <article class = 'track'>
-              <h3>Happless Hero (2026)</h3>
+              <h3>Happless Hero</h3>
               <audio controls>
                 <source src = 'assets/audio/happlesshero.ogg' type = 'audio/ogg'/>
                 Your browser does not support the audio element.
               </audio>
               <div>
-                <div>
-                <h4>Type of Work</h4>
-                <p>Commission</p>
+                <div class = "pieceInfo">
+                <h4>Type of Work | Commission (2026)</h4>
+                <hr>
                 <p>Composed for the ROBLOX game <a href = 'https://www.roblox.com/games/8704891814/Undertale-Last-Corridor-LITE'>Undertale: ASHES</a></p>
                 </div>
                 <div>
@@ -596,15 +658,15 @@
             </article>
 
             <article class = 'track'>
-              <h3>Prove Your Worth (2023)</h3>
+              <h3>Prove Your Worth</h3>
               <audio controls>
                 <source src = 'assets/audio/proveyourworth.ogg' type = 'audio/ogg'/>
                 Your browser does not support the audio element.
               </audio>
               <div>
-                <div>
-                <h4>Type of Work</h4>
-                <p>Personal</p>
+                <div class = "pieceInfo">
+                <h4>Type of Work | Personal (2023)</h4>
+                <hr>
                 <p>A battle song made in the context of a game for Hones.</p>
                 </div>
                 <div>

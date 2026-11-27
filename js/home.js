@@ -71,3 +71,63 @@ if (btnContainer) {
     });
   }
 }
+
+
+var coll = document.getElementsByClassName("otherProject");
+var prefersReducedMotion = window.matchMedia &&
+  window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+Array.prototype.forEach.call(coll, function(button) {
+  var content = button.nextElementSibling;
+  var animationFrame;
+
+  content.style.height = "0px";
+
+  button.addEventListener("click", function() {
+    var isExpanded = button.getAttribute("aria-expanded") === "true";
+    button.setAttribute("aria-expanded", String(!isExpanded));
+    button.classList.toggle("active", !isExpanded);
+    content.setAttribute("aria-hidden", String(isExpanded));
+
+    if (animationFrame) {
+      window.cancelAnimationFrame(animationFrame);
+    }
+
+    if (isExpanded) {
+      if (prefersReducedMotion) {
+        content.style.height = "0px";
+        content.setAttribute("hidden", "");
+        return;
+      }
+
+      content.style.height = content.scrollHeight + "px";
+      animationFrame = window.requestAnimationFrame(function() {
+        content.style.height = "0px";
+      });
+    } else {
+      content.removeAttribute("hidden");
+
+      if (prefersReducedMotion) {
+        content.style.height = "auto";
+        return;
+      }
+
+      content.style.height = "0px";
+      animationFrame = window.requestAnimationFrame(function() {
+        content.style.height = content.scrollHeight + "px";
+      });
+    }
+  });
+
+  content.addEventListener("transitionend", function(event) {
+    if (event.propertyName !== "height") {
+      return;
+    }
+
+    if (button.getAttribute("aria-expanded") === "true") {
+      content.style.height = "auto";
+    } else {
+      content.setAttribute("hidden", "");
+    }
+  });
+});

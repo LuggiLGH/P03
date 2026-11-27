@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OCBallLab</title>
+    <link href="css/main.css" rel="stylesheet" />
+    <link href = 'css/project.css' rel = 'stylesheet'/>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.webp">
+</head>
+
+    <body>
+        <div class = 'wrapper'>
+        <header>
+            <div class = 'headerImg'>
+                <a href = 'index.html'>
+                    <img src = 'assets/img/logo.svg' alt = "A logo for Joshua Ma's Portfolio."/>
+                </a>
+            </div>
+        </header>
+
+        <nav class = 'headerNav stickyHeader' id = 'headerNav'>        
+            <a href = "#overview">Overview</a>
+            <a href = "#context">Context</a>
+            <a href = "#ogEngine">Original Engine</a>
+            <a href = "#honesMoveset">Hones The Skeleton</a>
+            <a href = "#publicBuild">OCBL Public Build</a>
+            <a href = "#raidMode">Raid Mode</a>
+            <a href = "#conclusion">Conclusion</a>
+            <button class = 'hamburger' type = 'button' aria-label = 'Open Menu'>
+            <span class = 'bar'></span>
+            <span class = 'bar'></span>
+            <span class = 'bar'></span>
+            </button>
+        </nav>
+        <main>
+            <section class = 'projectInfo' style = "background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/img/ocbl/Screenshot_176.webp')">
+                <h1>OCBallLab</h1>
+                <h2>ROLES</h2>
+                    <h3>Programmer, Artist, Sound Designer, Character Designer</h3>
+            </section>
+
+            <div class = 'projectOverview'>
+                <section class = 'projectSection' id = 'overview'> <!-- Overview -->
+                    <h3>Takeaways</h3>
+                    <ul>
+                        <li>Learned how to navigate Godot's workspace and how to program in gdscript.</li>
+                        <li>Understood the importance of working towards game feel for the player/viewer's experience.</li>
+                        <li>Learned the basics of balancing a character through making sure it's exciting/interesting to watch while not being too strong.</li>
+                    </ul>
+
+                    <h3>Project Overview</h3>
+                    <p>
+                        OCBallLab is a physics-based simulation between various characters made by different people. The project was started by <a href = "https://x.com/phishtickz">Phishtickz</a>,
+                        when I first heard about the project I was inspired to try and make my own version before a public build was released. After making a boss battle in the public version,
+                        I was invited to join the dev team.
+                    </p>
+
+                    <p>
+                        I currently work as a mainly an artist for the project and a programmer whenever needed. For art, I provide alternate skins for Hones depending on the season, while
+                        as a coder I mainly assist with minor systems as well as looking for bugs whenever needed.
+                    </p>
+
+                    <p>
+                        You can access the public engine build here: <a href = 'https://phishmeister.itch.io/ocballlab-public-version'>OCBallLab on Itch.io</a>
+                        <br>
+                        To watch matches you can go to Phishtickz's socials: <a href = 'https://x.com/phishtickz'>Twitter</a> and <a href = 'https://www.youtube.com/@Phishtickz'>YouTube</a>
+                    </p>
+                </section>
+
+                <div class = 'figureSection'> <!-- Logo -->
+                    <figure>
+                        <iframe src = 'https://youtube.com/shorts/LGCQShKk9C4?si=9tC9RJVCPyvGIwyh'>
+
+                        </iframe>
+                        <figcaption>A match in OCBallLab.</figcaption>
+                    </figure>
+                </div>
+
+                <section class = 'projectSection' id = 'myContributions'>
+                    <h3>My Contributions</h3>
+                    <br>
+                    <div class = "contributionSection">
+                        <div class = "contribution" aria-label = "A video showcasing various characters I've programmed for OCBallLab.">
+                            <h4>Character Creation</h4>
+                            <video tabindex = '0' class = 'contributionVid video' autoplay loop muted = "true" playsinline controlsList = "nodownload">
+                                <source src = 'assets\img\ocbl\chars.mp4' type = 'video/mp4'/>
+                            </video>
+                            <p>
+                                Alongside Hones, an official character, I've programmed multiple characters for both myself, and others. Defining their UX and game balance, making sure they feel fun to watch during their matches.
+                            </p>
+                        </div>
+                        <div class = "contribution">
+                            <h4>Sound Design</h4>
+                            <img class = "contributionVid zoomImg" tabindex = '0' src = "assets/img/ocbl/FL.png" alt = "A screenshot of the FL Studio project for Hones' sound effects in OCBallLab."
+                            onclick = "openModal('modal1', 'A screenshot of the FL Studio project for Hones sound effects in OCBallLab.')" alt = 'A screenshot of the FL Studio project for Hones' sound effects in OCBallLab.'
+                            onkeydown = 'checkKey("modal1", "A screenshot of the FL Studio project for Hones sound effects in OCBallLab.", event)'/>
+                            <div id = 'modal1' class = 'modal' role = 'dialog' aria-label = 'FL Screenshot' aria-modal = 'true'>
+                                <button class="close" onclick = "closeModal('modal1')" aria-label = "Close modal">&times;</button>
+                                <img class = "modalImg" src = 'assets/img/ocbl/FL.png' alt = 'A screenshot of the FL Studio project for Hones sound effects in OCBallLab.'>
+                                <div class="caption"></div>
+                            </div>
+                            <p>
+                                Being able to create a handful of characters, I took the opportunity to create a variety of sound effects for them, enhancing the viewer experience. 
+                            </p>
+                        </div>
+                        <div class = "contribution">
+                            <h4>Custom Game Modes</h4>
+                            <video tabindex = '0' class = 'contributionVid video' autoplay loop muted = "true" playsinline controlsList = "nodownload">
+                                <source src = 'assets\img\ocbl\gameModes.mp4' type = 'video/mp4'/>
+                            </video>
+                            <p>
+                                Defined custom and unique game modes for the game; this includes the prototype version of the official "Raid Boss" game mode where a team of 4 went against a boss character.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+
+                <section class = 'projectSection contextSection' id = 'context'>
+                    <h3>Context</h3>
+                    <p><b>Genre:</b> Simulation & Entertainment</p>
+                    <p><b>Team Size:</b> 4 Programmers, +Various Artists</p>
+                    <p><b>Platform:</b> PC (Windows Only)</p>
+                    <p><b>Development Time:</b> April 2026 - Present</p>
+                    <p><b>Tools Used:</b> Godot (Game Engine + Programming), Clip Studio Paint (Art), FL Studio (Music, Sound), Audacity (Sound).</p>
+                </section>
+                <div class = 'figureSection'> <!-- Draft Images -->
+                    <figure>
+                        <img tabindex = '0' src = 'assets\img\ocbl\Screenshot_177.png' class = 'zoomImg'
+                        onclick = "openModal('modal4', 'A screenshot of the ball engine I was coding.')" alt = 'A screenshot of the ball engine I was coding.'
+                        onkeydown = 'checkKey("modal4", "A screenshot of the ball engine I was coding.", event)'/>
+                        <figcaption>A screenshot of the ball engine I was coding after being inspired by OCBallLab.</figcaption>
+                    </figure>
+                    <div id = 'modal4' class = 'modal' role = 'dialog' aria-label = 'Beta designs for Ace and Eli' aria-modal = 'true'>
+                        <button class="close" onclick = "closeModal('modal4')" aria-label = "Close modal">&times;</button>
+                        <img class = "modalImg" src = 'assets/img/ocbl/Screenshot_177.png' alt = 'A screenshot of the ball engine I was coding.'>
+                        <div class="caption"></div>
+                    </div>
+                </div>
+
+                <section class = 'projectSection' id = 'ogEngine'>
+                    <h3>The Original Engine</h3>
+                    <p>
+                        I became aware of OCBallLab around late March, early April 2026, and it was around the time I began learning Godot. I thought it would be a good opportunity
+                        to try my hand at programming my own version of the game.
+
+                        At the time, I knew that I needed to program characters having a healthbar, a meterbar and be able to move around and bounce off the stage and other balls.
+                    </p>
+                    <p>
+                        At first, progress was relatively slow, as I was still wrapping my head around Godot and how to program in gdscript. Though, I was able to get a basic version of character archetypes (unarmed, weapon and gun balls)
+                        to use as templates for future characters, and a rough character select screen ready after 11 days.
+                    </p>
+                </section>
+
+                <div class = 'figureSection'> <!-- Video -->
+                    <figure>
+                        <video tabindex = '0' class = 'video' controls>
+                            <source src = 'assets\img\ocbl\2026-04-15 00-34-39.mp4' type = 'video/mp4'/>
+                        Your browser does not support the video tag.
+                        </video>
+                        <figcaption>A video showcasing the early character and stage select screen.</figcaption>
+                    </figure>
+                </div>
+
+                <section class = 'projectSection' id = 'honesMoveset'>
+                    <h3>Hones The Skeleton | Designing my First Character Moveset</h3>
+                    <p>
+                        After setting up the both the basics of the engine, as well as templates on different character archetypes, I began to create the first character
+                        for the ball engine: Hones the Skeleton.
+                    </p>
+                    <p>
+                        When conceptulizing his moveset, the important thing I had to keep in mind is both making sure he was both: entertaining to watch, but also not hard to follow while watching. Lastly, I had to make sure he wasn't too strong
+                        of a character.
+                    </p>
+                    <p>
+                        To quickly summarize the moveset I decided for him, he consumes a resource to teleport to the opponent, and if he manages to land a backstab, he's rewarded what he used up
+                        and then some. When he fills out his meterbar, he can cast a dragon spell that can make him teleport to whoever it hit for 0 cost.
+                    </p>
+                </section>
+
+                <div class = 'figureSection'>
+                    <figure>
+                        <video tabindex = '0' class = 'video' controls>
+                            <source src = 'assets\img\ocbl\honesShowcase_3.mp4' type = 'video/mp4'/>
+                        Your browser does not support the video tag.
+                        </video>
+                        <figcaption>A video showcasing Hones' moveset in the original ball engine I coded.</figcaption>
+                    </figure>
+                </div>
+
+                <section class = 'projectSection' id = 'publicBuild'>
+                    <h3>OCBallLab's Public Build</h3>
+                    <p>
+                        Sometime in early May 2026, Phishstickz released a public build of OCBallLab, allowing me and many others to take a look at how the engine worked.
+                    </p>
+                    <p>
+                        It took me a while to understand it fully, but it was truly impressive at how much it differed from my own engine. For example, while I had basic
+                        versions of characters to use as templates, I didn't think to seperate the scripts, one that handled their physics and one that handled their
+                        behaviour. It was truly enlightening to see the different systems Phishstickz put in place and it taught me a lot about how to design a game in
+                        Godot.
+                    </p>
+                    <p>
+                        I shortly afterwards began working on porting over Hones from my original engine to the public build and managed to get him working after about 5 days.
+                    </p>
+                </section>
+
+                <div class = 'figureSection'>
+                    <figure>
+                        <video tabindex = '0' class = 'video' controls>
+                            <source src = 'assets\img\ocbl\oldHones.mp4' type = 'video/mp4'/>
+                        Your browser does not support the video tag.
+                        </video>
+                        <figcaption>A video showcasing an old version of Hones in OCBallLab before he was made official.</figcaption>
+                    </figure>
+                </div>
+
+                <section class = 'projectSection' id = 'raidMode'>
+                    <h3>Raid Mode & Being Invited to the Team</h3>
+                    <p>
+                        Sometime after getting used to coding within the OCBallLab engine, I began coding a custom game mode that I planned on putting in my
+                        original ball engine: "Raid Mode", where a team of 3 or 4 players would need to fight a boss character.
+                    </p>
+
+                    <p>
+                        After getting basics of the scene set up, I began to work on the boss character, which would be THE ROARING KNIGHT from DELTARUNE by Toby Fox.
+                        I would give them 8 moves to use, all of them based on the different moves used in DELTARUNE. After about 4 days of work, I had a working version
+                        of them ready to go.
+                    </p>
+
+                    <p>
+                        Soon after, a tournament within the community was held, and I offered to showcase Raid Mode with THE ROARING KNIGHT as a pre-show before the
+                        grand finals. After the tournament, I was invited to join the dev team from them being impressed by it and have been working on the project ever since. 
+                    </p>
+                </section>
+
+                <div class = 'figureSection'> <!-- Key Art Image -->
+                    <figure>
+                        <iframe src = 'https://youtu.be/4909XJP8-8k'>
+
+                        </iframe>
+                        <figcaption>A recording of the tournament in question, while proper capture of some matches was not possible you can still go to 3:58:01 to hear the fight occur.</figcaption>
+                    </figure>
+                </div>
+
+                <section class = 'projectSection' id = 'conclusion'>
+                    <h3>Conclusion</h3>
+                        <p>
+                            OCBallLab has been an incredibly wonderful experience for me, letting me meet incredible and talented people, and allowing me to learn a lot about programming in Godot, as well as how to design a game for the player/viewer experience.
+                        </p>
+
+                        <p>
+                            It has also served for me to continue practicing art, music, sound and programming. If this project has interested you, I highly recommend checking out Phishtickz's socials to watch matches.
+                        </p>
+                </section>
+            </div>
+        </main>
+
+        <div class = 'bgContainer' aria-hidden = 'true'>
+            <div class = 'scrollBGLEFT'></div>
+            <div class = 'scrollBGRIGHT'></div>
+        </div>
+
+        <script src = 'js/script.js'></script>
+        <footer>
+            <div class = 'navFooter'>
+                <div class = 'footerSection'>
+                    <h4>Contact & About</h4>
+                    <a href="./about.html">About Me</a>
+                    <a href="./about.html#contact">Contact</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    </body>
+</html>
